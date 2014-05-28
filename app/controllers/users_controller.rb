@@ -1,3 +1,3 @@
 class UsersController < ApplicationController
-  skip_authorization_check :only => [:new, :create]
+ # skip_authorization_check :only => [:new, :create]
 end
