@@ -42,6 +42,11 @@ end
 #postgresql for database
 	gem 'pg'
 
+group :development, :test do 
+	gem 'rails_12factor'
+end
+
+
 # haml gem
 
 gem 'haml'
