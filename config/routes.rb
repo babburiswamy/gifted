@@ -1,6 +1,7 @@
 IAmGifted::Application.routes.draw do
   devise_for :admins
   devise_for :users, :controllers => {:registrations => "registrations" }
+  root to: "staticpages#home"
 
   get "staticpages/home"
   get "staticpages/programs"
@@ -10,7 +11,8 @@ IAmGifted::Application.routes.draw do
   get "staticpages/search"
   get "staticpages/level"
   get "staticpages/testpage"
- root to: 'staticpages#home' 
+  
+
 
 get '/programs', to: 'staticpages#programs'
 get '/ngoservices', to: 'staticpages#ngoservices'
