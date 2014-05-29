@@ -1,0 +1,11 @@
+%html
+  %body
+    %h1 Alphabet
+    %p The big and small letters have all got mixed up in the bag. Write them in the correct order in the correct bag.
+    = image_tag("alphabet.jpg", :alt => "rss feed", :class => "img-rounded" , :style => "height:350px;width:320px")
+    %h4 Write the name for each picture.Put a or an with the name.
+    = image_tag("alphabet1.jpg", :alt => "rss feed", :class => "img-rounded" , :style => "height:350px;width:320px")
+    %br
+    %br
+    = link_to "next", nouns_noun_path, :class => "btn-primary btn"
+    

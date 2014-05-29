@@ -1,29 +1,30 @@
-%div{:style => "height:90px;width:1100px;float:left"}
-  = image_tag("img1.jpeg", :alt => "rss feed", :class => "img-rounded" , :style => "height:90px;width:180px")
-  = image_tag("img3.jpeg", :alt => "rss feed", :class => "img-rounded" , :style => "height:90px;width:180px")
-  = image_tag("img5.jpeg", :alt => "rss feed", :class => "img-rounded" , :style => "height:90px;width:180px")
-  = image_tag("img6.jpeg", :alt => "rss feed", :class => "img-rounded" , :style => "height:90px;width:180px")
-  = image_tag("img7.jpeg", :alt => "rss feed", :class => "img-rounded" , :style => "height:90px;width:180px")
-  = image_tag("101.jpg", :alt => "rss feed", :class => "img-rounded" , :style => "height:90px;width:180px")
-
-  .navbar.navbar-default
-    .container-fluid
-      .navbar-header
-        %button{:type => "button", :class => "navbar-toggle", :data => {:toggle => "collapse", :target => "#bs-example-navbar-collapse-1"}}
-          %span.sr-only Toggle navigation
-          %span.icon-bar 
-            %span.icon-bar 
-              %span.icon-bar 
-                = link_to "Home",new_user_session_path, :class => "form-control"
-                #bs-example-navbar-collapse-1.collapse.navbar-collapse
-      %ul.nav.navbar-nav
-        %li{:class => controller.controller_name == "Programs" ? "active" : ""}
-          = link_to "Programs", programs_path, :class => "menu-item "
-        %li{:class => controller.controller_name == "ngoservices" ? "active" : ""}
-          = link_to "NGO Services", ngoservices_path, :class => "menu-item"
-        %li{:class => controller.controller_name == "boardofeducation" ? "active" : ""}
-          = link_to "Board Of Education", boardofeducation_path, :class => "menu-item"
-        %li{:class => controller.controller_name == "Aboutus" ? "active" : ""}
-          = link_to "About US", aboutus_path, :class => "menu-item"
-                
-                
+.col-sm-2
+  #Three
+    I AM GIFTED
+  %p.text-info
+    An online coaching center
+.col-sm-5
+  %div{:style => "height:90px;width:1100px;float:left"}
+    = image_tag("img1.jpeg", :alt => "rss feed", :class => "img-rounded" , :style => "height:90px;width:180px")
+    = image_tag("img3.jpeg", :alt => "rss feed", :class => "img-rounded" , :style => "height:90px;width:180px")
+    = image_tag("img5.jpeg", :alt => "rss feed", :class => "img-rounded" , :style => "height:90px;width:180px")
+    = image_tag("img6.jpeg", :alt => "rss feed", :class => "img-rounded" , :style => "height:90px;width:180px")
+    = image_tag("img7.jpeg", :alt => "rss feed", :class => "img-rounded" , :style => "height:90px;width:180px")
+    = image_tag("101.jpg",   :alt => "rss feed", :class => "img-rounded" , :style => "height:90px;width:180px")
+  
+    %nav.navbar.navbar-inverse{:role => "navigation"}
+      .container-fluid
+        .navbar-header
+          %button.navbar-toggle{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+            %span.sr-only Toggle navigation
+            %span.icon-bar
+              %span.icon-bar
+                %span.icon-bar
+                  / Collect the nav links, forms, and other content for toggling
+                  #bs-example-navbar-collapse-1.collapse.navbar-collapse
+                    %ul.nav.navbar-nav
+                      %li= link_to "Home", new_user_session_path
+                      %li= link_to "Programs", programs_path
+                      %li= link_to "NGO Services", ngoservices_path
+                      %li= link_to "Board Of Education", nouns_noun_path
+                      

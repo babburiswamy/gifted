@@ -11,9 +11,9 @@ IAmGifted::Application.routes.draw do
   get "staticpages/search"
   get "staticpages/level"
   get "staticpages/testpage"
-  
-
-
+  get "staticpages/verb"
+  get "staticpages/adjective"
+  get "staticpages/alphabet"
 get '/programs', to: 'staticpages#programs'
 get '/ngoservices', to: 'staticpages#ngoservices'
 get '/boardofeducation', to: 'staticpages#boardofeducation'
@@ -25,7 +25,7 @@ get "pronouns/pronoun"
 get "pronouns/pronoun1"
 get "pronouns/pronoun2"
 get "pronouns/pronoun3"
-get "verbs/verb"
+
  # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
