@@ -1,0 +1,11 @@
+%html
+  %body
+    %form
+      .col-sm-4
+        = image_tag("activity.jpg", :alt => "rss feed", :class => "img-rounded" , :style => "height:360px;width:350px")
+        .row
+          %br
+          .pull-left
+            = link_to "previous", staticpages_activity13_path, :class => "btn-primary btn"
+          .pull-right
+            = link_to "next", '#', :class => "btn-primary btn"

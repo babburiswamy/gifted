@@ -1,0 +1,14 @@
+%html
+  %body
+    %form
+      .col-sm-4
+        %p{:style => "font-family:arial;color:green;font-size:20px;"} Make a Bouquet of Beautiful Paper Flowers.
+        = image_tag("activity.jpg", :alt => "rss feed", :class => "img-rounded" , :style => "height:360px;width:350px")
+        .row
+          %br
+          .pull-left
+            = link_to "previous",  '#', :class => "btn-primary btn"
+          .pull-right
+            = link_to "next", staticpages_activity1_path, :class => "btn-primary btn"
+
+

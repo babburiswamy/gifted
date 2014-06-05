@@ -1,0 +1,41 @@
+%html
+  %body
+    %form
+      %p{:style => "font-family:arial;color:green;font-size:25px;text-decoration:underline;"} Punctuation:
+      %h4
+        %p The main elements of punctuation are as follows.
+      %h4
+        %ol{:type => "A"}
+          %li
+            %b Capital letter is used
+        %ol{:start => "1"}
+          %li
+            for the first letter of a sentence.
+        %ol{:start => "2"}
+          %li
+            For the first letter of a person’s given name & family name.
+        %ol{:start => "3"}
+          %li
+            For the pronoun I
+        %ol{:start => "4"}
+          %li
+            For the first letter of names of the days of the week, months of 
+            %br
+            the year & special times such as Easter, Christmas
+        %ol{:start => "5"}
+          %li
+            For the first letter of names of towns, cities, countries, streets, schools etc.
+        %ol{:start => "6"}
+          %li
+            Sometimes to begin each line in poetry.
+        %ol{:start => "7"}
+          %li
+            For the first letter of the main words in the titles of books, poems,
+          .pull-left
+            = link_to "previous",  staticpages_prepositions_path, :class => "btn-primary btn"
+          .pull-right
+            = link_to "next",  staticpages_punctuation1_path, :class => "btn-primary btn"
+
+                          
+       
+            

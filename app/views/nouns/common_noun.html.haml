@@ -1,0 +1,34 @@
+%html
+  %body
+    %form
+      %p{:style => "font-family:arial;color:green;font-size:20px; text-decoration:underline;"} Common Nouns:
+      %h4
+        %p Common nouns name the everyday things around us. A common noun names any person, place or thing.
+        e.g: cup, horse, tree, arm, cheese, book, pencil, car, rabbit, computer
+        %p{:style => "font-family:arial;color:green;font-size:20px; text-decoration:underline;"} Underline the common nouns:
+        %h4
+          %p I have a brother and a sister.
+          %p Our parents were born in a big city.
+          %p I go to a big school.
+          %p I have many books to read.
+          %p There are many children in my school.
+          %p{:style => "font-family:arial;color:green;font-size:20px; text-decoration:underline;"} Proper Nouns:
+          .col-sm-4
+            #divstyle1
+              %h4
+                &nbsp Proper nouns are names of 
+                specific people, places 
+                and things.
+          .col-sm-4
+            #divstyle1
+              %h4
+                &nbsp Proper nouns always begin
+                with a capital letter.
+                .row
+                  %br
+                  .pull-left
+                    = link_to "previous",   nouns_noun_exercise_path, :class => "btn-primary btn"
+                  .pull-right
+                    = link_to "next", nouns_proper_nouns_path, :class => "btn-primary btn"
+        
+

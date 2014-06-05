@@ -1,0 +1,9 @@
+%html
+  %body
+    %form
+      %p{:style => "font-family:arial;color:green;font-size:20px; text-decoration:underline;"} Examples:
+      = image_tag("punctuation.jpg", :alt => "rss feed", :class => "img-rounded" , :style => "height:450px;width:450px")
+    .pull-right
+      = link_to "previous",  staticpages_punctuation2_path, :class => "btn-primary btn"
+      = link_to "next",  staticpages_punctuation3_path, :class => "btn-primary btn"
+

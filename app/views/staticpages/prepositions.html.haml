@@ -1,0 +1,19 @@
+%html
+  %body
+    %form
+      %p{:style => "font-family:arial;color:green;font-size:25px;text-decoration:underline;"} Prepositions:
+      %h4
+        %p 
+          Prepositions are usually used before nouns or pronouns.
+          %br
+          They  have position, direction, and time.
+          .col-sm-5
+            = image_tag("preposition.jpg", :alt => "rss feed", :class => "img-rounded" , :style => "height:450px;width:450px")
+          .col-sm-5
+            = image_tag("preposition1.jpg", :alt => "rss feed", :class => "img-rounded" , :style => "height:450px;width:450px")
+            %br
+            .pull-left
+              = link_to "previous",  staticpages_verbimage_path, :class => "btn-primary btn"
+            .pull-right
+              = link_to "next",   staticpages_punctuation_path, :class => "btn-primary btn"
+

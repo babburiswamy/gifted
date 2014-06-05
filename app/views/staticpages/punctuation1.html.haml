@@ -1,0 +1,40 @@
+%html
+  %body
+    %form
+      %p{:style => "font-family:arial;color:green;font-size:25px;text-decoration:underline;"} Punctuation:
+      %h4
+        %ol{:type => "B"}
+          %b A full stop is used
+        %ol{:start => "1"}
+          %li
+            at the end of a statement or command sentence.
+            %br
+            e.g	that dog is brown
+            %br
+            Sit down ( command )
+        %ol{:start => "2"}
+          %li
+            in abbreviations if the first letter & only part of the word is used.
+            %br
+            e.g &nbsp&nbsp captain &nbsp Capt. &nbsp &nbsp &nbsp Crescent  &nbsp &nbsp Cres.
+            %br
+            %br
+            However if the last letter is included in the abbreviation, no full stop is used.
+            %br
+            #divstylebox
+              E.g &nbsp &nbsp	Mister	 &nbsp Mr	
+              %br
+              &nbsp &nbsp &nbsp &nbsp &nbsp Doctor &nbsp Dr
+              %br
+              &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp Road       &nbsp  rd
+              %br
+              %br
+            .pull-left
+              = link_to "previous",  staticpages_punctuation_path, :class => "btn-primary btn"
+            .pull-right
+              = link_to "next",  staticpages_punctuation2_path, :class => "btn-primary btn"
+
+                          
+            
+      
+      

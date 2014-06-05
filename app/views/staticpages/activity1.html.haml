@@ -1,0 +1,26 @@
+%html
+  %body
+    %form
+      .col-sm-4
+        = image_tag("activity1.jpg", :alt => "rss feed", :class => "img-rounded" , :style => "height:360px;width:350px")
+      .col-sm-4
+        %p{:style => "font-family:arial;color:green;font-size:20px;text-decoration:underline;"} Materials:
+        %h4
+          %ol{:start => "A"}
+            %li Colorful paper in squares 15 x 15 cm (6 x 6 in). You'll need five of each color.
+            %li Tissue paper.
+            %li Glue stick.
+            %li Craft glue.
+            %li Hot glue gun.
+            %li Sticky tape or Washi tape.
+            %li Scissors.
+            %li Wooden skewers.
+            .row
+              %br
+              .pull-left
+                = link_to "previous", staticpages_programs_path, :class => "btn-primary btn"
+              .pull-right
+                = link_to "next", staticpages_activity2_path, :class => "btn-primary btn"
+
+
+        

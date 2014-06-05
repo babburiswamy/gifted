@@ -1,6 +1,6 @@
 IAmGifted::Application.routes.draw do
   devise_for :admins
-  devise_for :users, :controllers => {:registrations => "registrations" }
+  #devise_for :users, :controllers => {:registrations => "registrations" }
   root to: "staticpages#home"
 
   get "staticpages/home"
@@ -14,6 +14,39 @@ IAmGifted::Application.routes.draw do
   get "staticpages/verb"
   get "staticpages/adjective"
   get "staticpages/alphabet"
+  get "staticpages/vowel"
+  get "staticpages/consonants" 
+  get "staticpages/capital_letters"
+  get "staticpages/singular_pluralnouns"
+  get "staticpages/singular_excercise" 
+  get "staticpages/singular_plural"
+  get "staticpages/adjectives"
+  get "staticpages/adjimage"
+  get "staticpages/article"
+  get "staticpages/verb1"
+  get "staticpages/verbimage"
+  get "staticpages/prepositions"
+  get "staticpages/punctuation"
+  get "staticpages/punctuation1"
+  get "staticpages/punctuation2"
+  get "staticpages/punctuation3"
+  get "staticpages/activity1"
+  get "staticpages/activity2"
+  get "staticpages/activity3"
+  get "staticpages/activity4"
+  get "staticpages/activity5"
+  get "staticpages/activity6"
+  get "staticpages/activity7"
+  get "staticpages/activity8"
+  get "staticpages/activity9"
+  get "staticpages/activity10"
+  get "staticpages/activity11"
+  get "staticpages/activity12"
+  get "staticpages/activity13"
+  get "staticpages/activity14"
+  get "staticpages/test"
+  get "staticpages/testfile"
+
 get '/programs', to: 'staticpages#programs'
 get '/ngoservices', to: 'staticpages#ngoservices'
 get '/boardofeducation', to: 'staticpages#boardofeducation'
@@ -25,7 +58,9 @@ get "pronouns/pronoun"
 get "pronouns/pronoun1"
 get "pronouns/pronoun2"
 get "pronouns/pronoun3"
-
+get "nouns/noun_exercise"
+get "nouns/common_noun"
+get "nouns/proper_nouns"
  # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

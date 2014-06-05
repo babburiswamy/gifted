@@ -1,0 +1,13 @@
+%html
+  %body
+    %form
+      %p{:style => "font-family:arial;color:green;font-size:20px;"} Examples of adjectives.
+      .col-sm-5
+        = image_tag("adject.jpg", :alt => "rss feed", :class => "img-rounded" , :style => "height:450px;width:450px")
+      .col-sm-5
+        = image_tag("adject1.jpg", :alt => "rss feed", :class => "img-rounded" , :style => "height:450px;width:450px")
+        .pull-left
+          = link_to "previous",  staticpages_adjectives_path, :class => "btn-primary btn"
+        .pull-right
+          = link_to "next",  staticpages_article_path, :class => "btn-primary btn"
+

@@ -1,0 +1,29 @@
+%html
+  %body
+    %form
+      %p{:style => "font-family:arial;color:green;font-size:20px;"} Exercise-1:
+      %p{:style => "font-family:arial;color:green;font-size:20px;"} Choose nouns from the box to add three more nouns to each column.
+      #divstyle
+        %h4 &nbsp pen &nbsp  lion &nbsp ring &nbsp hotel &nbsp hospital &nbsp &nbsp postman
+        %br
+        %h4 &nbsp mother &nbsp aunt &nbsp bottle &nbsp cat	&nbsp office &nbsp zebra
+        %p{:style => "font-family:arial;color:green;font-size:20px;"} Exercise-2:
+        %p{:style => "font-family:arial;color:green;font-size:20px;"} Cross the word which is not a noun:
+        %h4
+          %p (e.g.  train, ticket, buy, whistle, window-In this list, buy is not a noun. It does not name anything.)
+          %ol
+            %h4
+              %li dancer, singer, painter, water, hotter
+              %li paper, pencil, colour, beautiful, rubber
+              %li knife, fork, glass, eat, slice
+              %li tail, tell, beak, claw, head
+              %li garden, grass, grow, grain, grapes
+              %li hot, water, soap, brush, towel
+              %li sky, sun, star, blue, earth
+              %li apple, banana, ripe, mango, orange
+              %li dear, cow, buffalo, deer, goat
+              %li table, chair, bench, broken desk
+              .pull-left
+                = link_to "previous",  nouns_noun_path, :class => "btn-primary btn"
+              .pull-right
+                = link_to "next", nouns_common_noun_path, :class => "btn-primary btn"

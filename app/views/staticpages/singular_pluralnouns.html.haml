@@ -1,0 +1,39 @@
+%html
+  %body
+    %form
+      %p{:style => "font-family:arial;color:green;font-size:20px;text-decoration:underline"} Singular nouns.
+      %h4
+        %p Nouns which speak of one person , place or thing are said to be in the Singular Number.
+        %p e.g. Friend, King, dog, bench
+        %p{:style => "font-family:arial;color:green;font-size:20px;text-decoration:underline"} Plural nouns.
+        %h4
+          %p Nouns which speak of more than one person , place or thing are said to be in the Plural Number.
+          %p e.g Friends, Kings, dogs, benches
+          .row
+            %table{:border => "1", :style => "width:300px"}
+              %thead
+                %tr
+                  %th singular
+                  %th plural
+                %tr
+                  %td lamp
+                  %td lamps
+                %tr
+                  %td worker
+                  %td workers
+                %tr
+                  %td place
+                  %td places  
+                %tr
+                  %td worker
+                  %td workers
+                %tr
+                  %td bus
+                  %td buses
+      .row
+        .pull-left
+          = link_to "previous",   staticpages_capital_letters_path, :class => "btn-primary btn"
+        .pull-right
+          = link_to "next",staticpages_singular_excercise_path, :class => "btn-primary btn"
+
+ 

@@ -1,0 +1,49 @@
+%html
+  %form
+    %p{:style => "font-family:arial;color:green;font-size:20px; text-decoration:underline;"} Is, are:
+    
+    %h4
+      %ol{:start => "1. "}
+        %li
+          We use is with singular nouns and pronouns.
+          %br
+          The chair is old.
+          %br
+          The train is late.
+          %br
+          He is a postman.
+    %h4
+      %ol{:start => "2. "}
+        %li
+          We use are with plural nouns and pronouns.
+          %br
+        These chairs are old.
+        %br
+        All the trains are late.
+        %br
+        They are students of this school.
+        %br
+        %br
+        %b However, there are two important points to remember.
+    %h4
+      %ol{:start => "3. "}
+        %li
+          I is also a singular pronoun. With  I  we use am.
+          %br
+          I am your friend. I am very hungry.
+    %h4
+      %ol{:start => "4. "}
+        %li
+          With you, we always use are, whether you stands for one person or
+          %br
+          for more than one person: You are a student. ( You for one student)
+          %br
+          You are students. 
+          %br
+          .pull-left
+            = link_to "previous",  pronouns_pronoun_path, :class => "btn-primary btn"
+          .pull-right
+            = link_to "next", pronouns_pronoun2_path, :class => "btn-primary btn"
+
+
+

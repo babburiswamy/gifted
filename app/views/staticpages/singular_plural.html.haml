@@ -1,0 +1,13 @@
+%html
+  %body
+    %form
+      %p{:style => "font-family:arial;color:green;font-size:20px;text-decoration:underline"} Some rules to remember when changing singular sentence into plural sentence.
+      #divstylebox1
+        %h4 &nbsp&nbsp i - we, &nbsp He/She - they ,&nbsp a - many / several
+        %h4 &nbsp&nbsp This-These, &nbsp his/her-their, &nbsp me-us / our
+        %h4 &nbsp&nbsp That-Those, &nbsp him/her-them,  &nbsp is-are
+        %h4 &nbsp&nbsp Was-were, &nbsp myself-ourselves
+        .pull-left
+          = link_to "previous",   staticpages_singular_excercise_path, :class => "btn-primary btn"
+        .pull-right
+          = link_to "next", pronouns_pronoun_path, :class => "btn-primary btn"
