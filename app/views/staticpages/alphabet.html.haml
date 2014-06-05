@@ -4,7 +4,12 @@
     %h4 The big and small letters have all got mixed up in the bag. Write them in the correct order in the correct bag.
     = image_tag("alphabet.jpg", :alt => "rss feed", :class => "img-rounded" , :style => "height:360px;width:350px")
     %br
-    = link_to "previous", '#', :class => "btn-primary btn"
-    .pull-right
-      = link_to "next",staticpages_vowel_path, :class => "btn-primary btn"
+    %ul.pager
+      .pull-left
+        %li
+          = link_to "previous", '#'
+      .pull-right
+        %li
+          = link_to "next" ,staticpages_vowel_path
 
+          

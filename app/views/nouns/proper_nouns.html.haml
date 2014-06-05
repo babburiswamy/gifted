@@ -32,11 +32,12 @@
       %li Your dog	
       %li big river
       %li This month
-.pull-left
-  = link_to "previous",   nouns_common_noun_path, :class => "btn-primary btn"
-.pull-right
-  = link_to "next",staticpages_capital_letters_path, :class => "btn-primary btn"
-        
+      %br
+  %ul.pager
+    .pull-left
+      %li= link_to "previous",   nouns_common_noun_path
+    .pull-right
+      %li= link_to "next" , staticpages_capital_letters_path
 
 
 

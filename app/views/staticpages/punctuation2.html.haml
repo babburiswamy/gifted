@@ -23,12 +23,12 @@
           %br
           e.g&nbsp&nbsp	Wow!&nbsp&nbsp	Ouch!&nbsp&nbsp	Well done!
           %br
-          .pull-left
-            = link_to "previous",  staticpages_punctuation1_path, :class => "btn-primary btn"
-          .pull-right
-            = link_to "next",  staticpages_punctuation3_path, :class => "btn-primary btn"
+          %ul.pager
+            .pull-left
+              %li= link_to "previous", staticpages_punctuation1_path
+            .pull-right
+              %li= link_to "next" ,  staticpages_punctuation3_path
 
-              
 
 
 

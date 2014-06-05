@@ -9,7 +9,10 @@
           Bring together the flaps and create a cone shape. Hold them together with your hands or with a clip until they are firmly glued. You've now created the first petal of your daisy.
           .row
             %br
-            .pull-left
-              = link_to "previous", staticpages_activity10_path, :class => "btn-primary btn"
-            .pull-right
-              = link_to "next", staticpages_activity12_path, :class => "btn-primary btn"
+            %ul.pager
+              %li
+                = link_to "previous",  staticpages_activity10_path
+              %li
+                = link_to "next",  staticpages_activity12_path
+
+         

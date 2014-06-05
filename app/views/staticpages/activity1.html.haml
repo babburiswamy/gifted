@@ -17,10 +17,11 @@
             %li Wooden skewers.
             .row
               %br
-              .pull-left
-                = link_to "previous", staticpages_programs_path, :class => "btn-primary btn"
-              .pull-right
-                = link_to "next", staticpages_activity2_path, :class => "btn-primary btn"
+              %ul.pager
+                %li
+                  = link_to "previous", staticpages_programs_path
+                %li
+                  = link_to "next", staticpages_activity2_path
 
-
+          
         

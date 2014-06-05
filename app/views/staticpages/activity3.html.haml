@@ -9,8 +9,10 @@
           Now take the right corner and bring it up to the top point, making a triangle. Fold and crease. Repeat with the left corner. Now you should have a smaller diamond shape, as pictured below.
           .row
             %br
-            .pull-left
-              = link_to "previous", staticpages_activity2_path, :class => "btn-primary btn"
-            .pull-right
-              = link_to "next", staticpages_activity4_path, :class => "btn-primary btn"
+            %ul.pager
+              %li
+                = link_to "previous",  staticpages_activity2_path
+              %li
+                = link_to "next",  staticpages_activity4_path
 
+          

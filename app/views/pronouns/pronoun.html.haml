@@ -35,12 +35,11 @@
                     their, theirs
                     %br
                     %br
-                    .pull-left
-                      = link_to "previous", staticpages_singular_plural_path, :class => "btn-primary btn"
-                    .pull-right
-                      = link_to "next", pronouns_pronoun1_path, :class => "btn-primary btn"
+                    %ul.pager
+                      .pull-left
+                        %li= link_to "previous",   staticpages_singular_plural_path
+                      .pull-right
+                        %li= link_to "next" ,pronouns_pronoun1_path
 
-                    
-                    
                     
                     

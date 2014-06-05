@@ -24,9 +24,9 @@
               %br
       .col-sm-4
         = image_tag("article.jpg", :alt => "rss feed", :class => "img-rounded" , :style => "height:330px;width:320px")
-        .pull-left
-          = link_to "previous",  staticpages_adjimage_path, :class => "btn-primary btn"
-        .pull-right
-          = link_to "next",   staticpages_verb_path, :class => "btn-primary btn"
-
+        %ul.pager
+          .pull-left
+            %li= link_to "previous",   staticpages_adjimage_path
+          .pull-right
+            %li= link_to "next" ,   staticpages_verb_path
 

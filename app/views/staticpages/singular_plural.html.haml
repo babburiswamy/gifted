@@ -7,7 +7,9 @@
         %h4 &nbsp&nbsp This-These, &nbsp his/her-their, &nbsp me-us / our
         %h4 &nbsp&nbsp That-Those, &nbsp him/her-them,  &nbsp is-are
         %h4 &nbsp&nbsp Was-were, &nbsp myself-ourselves
-        .pull-left
-          = link_to "previous",   staticpages_singular_excercise_path, :class => "btn-primary btn"
-        .pull-right
-          = link_to "next", pronouns_pronoun_path, :class => "btn-primary btn"
+        %ul.pager
+          .pull-left
+            %li= link_to "previous",  staticpages_singular_excercise_path
+          .pull-right
+            %li= link_to "next" , pronouns_pronoun_path
+

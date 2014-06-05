@@ -5,7 +5,8 @@
       %p{:style => "font-family:arial;color:black;font-size:20px;"} All  names  begin with capital letters.
       %p{:style => "font-family:arial;color:green;font-size:20px; text-decoration:underline;"} Read the names of the children in alphabetical order.
       = image_tag("capital.jpg", :alt => "rss feed", :class => "img-rounded" , :style => "height:450px;width:450px")
-      .pull-left
-        = link_to "previous",   nouns_proper_nouns_path, :class => "btn-primary btn"
-      .pull-right
-        = link_to "next",staticpages_singular_pluralnouns_path, :class => "btn-primary btn"
+      %ul.pager
+        .pull-left
+          %li= link_to "previous",   nouns_proper_nouns_path
+        .pull-right
+          %li= link_to "next" ,staticpages_singular_pluralnouns_path

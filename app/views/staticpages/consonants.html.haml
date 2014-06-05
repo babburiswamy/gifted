@@ -2,16 +2,21 @@
   %body
     %form
       %p{:style => "font-family:arial;color:green;font-size:20px;"}Write the name for each picture.Put a or an with the name.
-      = image_tag("vowel.jpg", :alt => "rss feed", :class => "img-rounded" , :style => "height:360px;width:350px")
-      %h4 Words that begin with a consonant sound take a before them.
-      %h5 e.g. a book, a chair, a table, a flower
-      %h4 Words that begin with a vowel sound take an before them.
-      %h5 e.g an apple, an egg, an inkpot, an umbrella, an orange
-      %p{:style => "font-family:arial;color:green;font-size:20px;"} Use a or an before each word.
-      = image_tag("con.jpg", :alt => "rss feed", :class => "img-rounded" , :style => "height:360px;width:350px")
-      .pull-left
-        = link_to "previous",  staticpages_vowel_path, :class => "btn-primary btn"
-      .pull-right
-        = link_to "next", nouns_noun_path, :class => "btn-primary btn"
+      .col-sm-4
+        = image_tag("vowel.jpg", :alt => "rss feed", :class => "img-rounded" , :style => "height:360px;width:350px")
+        %h4 Words that begin with a consonant sound take a before them.
+        %h5 e.g. a book, a chair, a table, a flower
+        %h4 Words that begin with a vowel sound take an before them.
+        %h5 e.g an apple, an egg, an inkpot, an umbrella, an orange
+       
+      .col-sm-4
+        = image_tag("con.jpg", :alt => "rss feed", :class => "img-rounded" , :style => "height:360px;width:350px")
+        %ul.pager
+          .pull-left
+            %li
+              = link_to "previous",  staticpages_vowel_path
+          .pull-right
+            %li
+              = link_to "next" , nouns_noun_path
 
 

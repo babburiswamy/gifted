@@ -29,10 +29,12 @@
               &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp Road       &nbsp  rd
               %br
               %br
-            .pull-left
-              = link_to "previous",  staticpages_punctuation_path, :class => "btn-primary btn"
-            .pull-right
-              = link_to "next",  staticpages_punctuation2_path, :class => "btn-primary btn"
+              %br
+              %ul.pager
+                .pull-left
+                  %li= link_to "previous", staticpages_punctuation_path
+                .pull-right
+                  %li= link_to "next" ,  staticpages_punctuation2_path
 
                           
             

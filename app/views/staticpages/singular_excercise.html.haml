@@ -6,15 +6,15 @@
         %h4 &nbsp rice &nbsp hair &nbsp news &nbsp sugar &nbsp grass	 
         %br
         %h4 &nbsp fish &nbsp  sheep &nbsp gold &nbsp series 
+        %br
         %p{:style => "font-family:arial;color:green;font-size:20px;text-decoration:underline"} Some nouns are always plural.
         #divstylebox
           %h4 &nbsp trousers &nbsp shorts &nbsp jeans &nbsp pants &nbsp pyjamas	 
           %br
           %h4 &nbsp spectacles &nbsp  glasses &nbsp scissors &nbsp tongs
           %br
-          .pull-left
-            = link_to "previous",  staticpages_singular_pluralnouns_path, :class => "btn-primary btn" 
-          .pull-right
-            = link_to "next",staticpages_singular_plural_path, :class => "btn-primary btn"
-      
-
+          %ul.pager
+            .pull-left
+              %li= link_to "previous",   staticpages_singular_pluralnouns_path
+            .pull-right
+              %li= link_to "next" ,staticpages_singular_plural_path

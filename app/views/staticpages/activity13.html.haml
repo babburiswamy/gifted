@@ -9,7 +9,10 @@
           You've now made a stylized paper daisy. Nice work!
           .row
             %br
-            .pull-left
-              = link_to "previous", staticpages_activity12_path, :class => "btn-primary btn"
-            .pull-right
-              = link_to "next", staticpages_activity14_path, :class => "btn-primary btn"
+            %ul.pager
+              %li
+                = link_to "previous",  staticpages_activity12_path
+              %li
+                = link_to "next",  staticpages_activity14_path
+
+          

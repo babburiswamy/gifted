@@ -31,10 +31,11 @@
         %ol{:start => "7"}
           %li
             For the first letter of the main words in the titles of books, poems,
-          .pull-left
-            = link_to "previous",  staticpages_prepositions_path, :class => "btn-primary btn"
-          .pull-right
-            = link_to "next",  staticpages_punctuation1_path, :class => "btn-primary btn"
+            %ul.pager
+              .pull-left
+                %li= link_to "previous", staticpages_prepositions_path
+              .pull-right
+                %li= link_to "next" ,  staticpages_punctuation1_path
 
                           
        

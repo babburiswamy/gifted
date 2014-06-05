@@ -12,8 +12,8 @@
           .col-sm-5
             = image_tag("preposition1.jpg", :alt => "rss feed", :class => "img-rounded" , :style => "height:450px;width:450px")
             %br
-            .pull-left
-              = link_to "previous",  staticpages_verbimage_path, :class => "btn-primary btn"
-            .pull-right
-              = link_to "next",   staticpages_punctuation_path, :class => "btn-primary btn"
-
+            %ul.pager
+              .pull-left
+                %li= link_to "previous",  staticpages_verbimage_path
+              .pull-right
+                %li= link_to "next" ,   staticpages_punctuation_path

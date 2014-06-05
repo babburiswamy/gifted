@@ -9,7 +9,10 @@
           Repeat the same folding and creasing process on the left side. You should have made the shape as pictured below.
           .row
             %br
-            .pull-left
-              = link_to "previous", staticpages_activity4_path, :class => "btn-primary btn"
-            .pull-right
-              = link_to "next", staticpages_activity6_path, :class => "btn-primary btn"
+            %ul.pager
+              %li
+                = link_to "previous",  staticpages_activity4_path
+              %li
+                = link_to "next",  staticpages_activity6_path
+
+          

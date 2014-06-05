@@ -9,8 +9,10 @@
           Now, take the two small triangles that extend over the edges and fold them back, as pictured below. Nice work! You've now created all the fold lines which will guide you through the next steps.
           .row
             %br
-            .pull-left
-              = link_to "previous", staticpages_activity5_path, :class => "btn-primary btn"
-            .pull-right
-              = link_to "next", staticpages_activity7_path, :class => "btn-primary btn"
+            %ul.pager
+              %li
+                = link_to "previous",  staticpages_activity5_path
+              %li
+                = link_to "next",  staticpages_activity7_path
 
+          

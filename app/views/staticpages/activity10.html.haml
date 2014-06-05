@@ -9,7 +9,10 @@
           Using a glue stick, add glue to the flaps.
           .row
             %br
-            .pull-left
-              = link_to "previous", staticpages_activity9_path, :class => "btn-primary btn"
-            .pull-right
-              = link_to "next", staticpages_activity11_path, :class => "btn-primary btn"
+            %ul.pager
+              %li
+                = link_to "previous",  staticpages_activity9_path
+              %li
+                = link_to "next",  staticpages_activity11_path
+
+          

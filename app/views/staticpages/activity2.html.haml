@@ -9,8 +9,10 @@
           First, place one square piece of paper 15cm x 15cm (6 x 6 in) on a flat surface with the colored side facing down. Turn the sheet so it looks like a diamond shape and bring the lower corner up to the top corner and fold the paper carefully. Crease well. Use a bone folder or the back of a metal spoon for perfectly sharp folds.
           .row
             %br
-            .pull-left
-              = link_to "previous", staticpages_activity1_path, :class => "btn-primary btn"
-            .pull-right
-              = link_to "next", staticpages_activity3_path, :class => "btn-primary btn"
+            %ul.pager
+              %li
+                = link_to "previous",  staticpages_activity1_path
+              %li
+                = link_to "next", staticpages_activity3_path
 
+          

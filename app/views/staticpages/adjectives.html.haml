@@ -67,12 +67,12 @@
                                               %font{:color => "red"}
                                                 Adjectives tell us what kind of, how many, what colour, etc.,
                                                 %p &nbsp persons, places, animals and things are.
-                                                .pull-left
-                                                  = link_to "previous",  pronouns_pronoun3_path, :class => "btn-primary btn"
-                                                .pull-right
-                                                  = link_to "next",  staticpages_adjimage_path, :class => "btn-primary btn"
+                                                %ul.pager
+                                                  .pull-left
+                                                    %li= link_to "previous",   pronouns_pronoun3_path
+                                                  .pull-right
+                                                    %li= link_to "next" ,   staticpages_adjimage_path
 
-                                                
                                                 
                           
                                                 

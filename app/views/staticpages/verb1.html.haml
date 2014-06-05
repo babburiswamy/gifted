@@ -30,13 +30,12 @@
                 says what a person or thing does, what a person or thing is, or what a
                 %br
                 person or thing has.
-                .pull-left
-                  = link_to "previous",  staticpages_verb_path, :class => "btn-primary btn"
-                .pull-right
-                  = link_to "next",   staticpages_verbimage_path, :class => "btn-primary btn"
+                %ul.pager
+                  .pull-left
+                    %li= link_to "previous",  staticpages_verb_path
+                  .pull-right
+                    %li= link_to "next" ,   staticpages_verbimage_path
 
-              
-                
                                                 
                           
 

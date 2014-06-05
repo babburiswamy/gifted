@@ -22,8 +22,10 @@
         %br
         %h4 &nbsp grass &nbsphorse &nbsp ice &nbsp eggs	&nbsp farm &nbsp uniform
         %br
-        .pull-left
-          = link_to "previous",   staticpages_alphabet_path, :class => "btn-primary btn"
-        .pull-right
-          = link_to "next",staticpages_consonants_path, :class => "btn-primary btn"
-        
+        %ul.pager
+          .pull-left
+            %li
+              = link_to "previous", staticpages_alphabet_path
+          .pull-right
+            %li
+              = link_to "next" ,staticpages_consonants_path

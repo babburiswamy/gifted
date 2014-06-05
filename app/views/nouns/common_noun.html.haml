@@ -26,9 +26,10 @@
                 with a capital letter.
                 .row
                   %br
-                  .pull-left
-                    = link_to "previous",   nouns_noun_exercise_path, :class => "btn-primary btn"
-                  .pull-right
-                    = link_to "next", nouns_proper_nouns_path, :class => "btn-primary btn"
-        
-
+                  %ul.pager
+                    .pull-left
+                      %li
+                        = link_to "previous",   nouns_noun_exercise_path
+                    .pull-right
+                      %li
+                        = link_to "next" , nouns_proper_nouns_path

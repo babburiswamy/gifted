@@ -6,11 +6,11 @@
         = image_tag("verb1.jpg", :alt => "rss feed", :class => "img-rounded" , :style => "height:360px;width:350px")
       .col-sm-5
         = image_tag("verb2.jpg", :alt => "rss feed", :class => "img-rounded" , :style => "height:360px;width:350px")
-    .row
+    
       %br
-    .pull-left
-      = link_to "previous",  staticpages_verb1_path, :class => "btn-primary btn"
-    .pull-right
-      = link_to "next",  staticpages_prepositions_path, :class => "btn-primary btn"
-
-                          
+    %ul.pager
+      .pull-left
+        %li= link_to "previous",  staticpages_verb1_path
+      .pull-right
+        %li= link_to "next" ,   staticpages_prepositions_path
+                    

@@ -30,10 +30,9 @@
                 %tr
                   %td bus
                   %td buses
-      .row
-        .pull-left
-          = link_to "previous",   staticpages_capital_letters_path, :class => "btn-primary btn"
-        .pull-right
-          = link_to "next",staticpages_singular_excercise_path, :class => "btn-primary btn"
-
- 
+            .row
+              %ul.pager
+                .pull-left
+                  %li= link_to "previous",   staticpages_capital_letters_path
+                .pull-right
+                  %li= link_to "next" ,staticpages_singular_excercise_path
