@@ -1,11 +1,20 @@
 class StaticpagesController < ApplicationController
   def home
   end
-
+  def tieup
+  end
+  def fame
+  end
   def programs
   end
-
+  def create
+  end
+  def distributions
+  end
   def ngoservices
+  end
+   
+  def events
   end
 
   def boardofeducation
@@ -15,6 +24,8 @@ class StaticpagesController < ApplicationController
   end
 
   def search
+  end
+  def team
   end
 
   def verb

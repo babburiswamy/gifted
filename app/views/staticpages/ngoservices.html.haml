@@ -1,5 +1,33 @@
-%html
-  %body
-    .col-sm-4
-      = video_player({:file => "/videos/kompally1.mp4"})
-   
+.row
+  .col-sm-3
+    = link_to image_tag(("10.jpg"), height: "160",  width: "250"  ) ,"/staticpages/team"
+  .col-sm-3
+    = link_to image_tag(("21.png"), height: "120",  width: "200"  ) ,"/staticpages/events" 
+  .col-sm-6
+    .well
+      %h4 Try Ultimately Leads to Success But Success Can Never Happen Without Trying. Teach Children That Trying is Far More Important Than Succeding.
+      %h4 That Is What We Are Doing. "UDDAN"
+     
+
+.row
+  .col-sm-6
+    %br
+    = link_to image_tag(("30.jpg"), height: "160",  width: "250"  ) ,"/staticpages/distributions"
+    %br
+  .col-sm-3
+    .well
+      %marquee{:behavior => "scroll", :direction => "up", :height => "130", :scrollamount => "1"}
+        - Comment.all.each do |comment |
+          %td
+            = comment.comment
+            %strong=comment.name
+          %br
+    = render "form_modal"
+.row
+  .col-sm-2
+    %br
+    = link_to image_tag(("40.jpg"), height: "150",  width: "150"  ) ,"/staticpages/tieup"
+  .col-sm-2
+    %br
+    = link_to image_tag(("50.jpg"), height: "150",  width: "250"  ) ,"/staticpages/fame"
+

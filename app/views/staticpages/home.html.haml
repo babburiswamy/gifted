@@ -1,8 +1,33 @@
 %html
   %body
-    #form-midle.part
-      %embed{:controls => "controls", :height => "100%", :src => "https://www.youtube.com/v/M7lc1UVf-VE?version=3", :type => "application/x-shockwave-flash", :width => "100%"}
-    #form-right.part
-      %marquee{:behavior => "scroll", :direction => "up", :height => "170", :scrollamount => "1"}
-        %p Hello..
-        %p Welcome to I Am Gifted
+    %center
+      %h1.italic I AM GIFTED
+      .container-fluid 
+        #custom_carousel.carousel.slide{"data-interval" => "2500", "data-ride" => "carousel"} 
+          .carousel-inner 
+            .item.active
+              .container-fluid 
+                .row 
+                  .col-md-3 
+                  = image_tag "11.jpg", :width => "1000", :height => "250" 
+               
+            .item
+              .container-fluid 
+                .row 
+                  .col-md-3 
+                    = image_tag "12.jpg", :width => "1000", :height => "250" 
+            .item 
+              .container-fluid 
+                .row 
+                  .col-md-3 
+                    = image_tag "13.jpg", :width => "1000", :height => "250" 
+            .item 
+              .container-fluid 
+                .row 
+                  .col-md-3 
+                    = image_tag "14.jpg", :width => "1000", :height => "250" 
+          
+     
+     
+        
+                                 

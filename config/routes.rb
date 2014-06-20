@@ -1,8 +1,14 @@
 IAmGifted::Application.routes.draw do
-  devise_for :admins
-  #devise_for :users, :controllers => {:registrations => "registrations" }
-  root to: "staticpages#home"
-
+ 
+  get "comments/index"
+  get "comments/create"
+  get "comments/show"
+  get "comments/edit"
+  get "comments/new"
+  get "staticpages/tieup"
+  get "staticpages/fame"
+  get "staticpages/distributions"
+  get "staticpages/events"
   get "staticpages/home"
   get "staticpages/programs"
   get "staticpages/ngoservices"
@@ -46,13 +52,14 @@ IAmGifted::Application.routes.draw do
   get "staticpages/activity14"
   get "staticpages/test"
   get "staticpages/testfile"
+  get "staticpages/team"
 
 get '/programs', to: 'staticpages#programs'
 get '/ngoservices', to: 'staticpages#ngoservices'
 get '/boardofeducation', to: 'staticpages#boardofeducation'
 get '/aboutus', to: 'staticpages#aboutus' 
 
-
+resources :comments
 get "nouns/noun" 
 get "pronouns/pronoun"
 get "pronouns/pronoun1"

@@ -1,13 +1,6 @@
-.col-xs-12.col-sm-12
-  #Three
-    I AM GIFTED
-  #text-info
-    An online coaching center
-.col-xs-13.col-sm-13
-  %marquee
-    = image_tag("headerimage.jpeg", :alt => "rss feed", :class => "img-rounded" , :style => "height:100px;width:1000px")
-  
-  
+#Three
+  I AM GIFTED
+
   #headermenu
     %nav.navbar.navbar-inverse{:role => "navigation",style:"border-color:yellow;"}
       .container-fluid
@@ -19,7 +12,7 @@
             %span.icon-bar
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           %ul.nav.navbar-nav
-            %li= link_to "Home", staticpages_home_path 
+            %li= link_to "Home", staticpages_home_path  
             %li= link_to "Activities", programs_path
             %li= link_to "NGO Services", ngoservices_path
             %li= link_to "Board Of Education", staticpages_alphabet_path

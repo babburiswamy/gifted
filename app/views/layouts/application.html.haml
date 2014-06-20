@@ -3,12 +3,11 @@
   %head
     = stylesheet_link_tag  "application", media: "all"
     = javascript_include_tag "application"
-    = javascript_include_tag 'swfobject'
     = csrf_meta_tags
   %body
-    = render "layouts/header"
+    = render 'layouts/rotate'
     .container
       %p.notice= notice
       %p.alert= alert
       = yield
-  = render 'layouts/footer'
+   

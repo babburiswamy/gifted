@@ -1,0 +1,125 @@
+.container
+  #myCarousel.matrix.matrix-scroller.carousel.slide
+    / Carousel items
+    .row
+      .carousel-inner
+        .item.active
+          .row
+            %ul.unstyled.inline
+              %li.square.cyan.span1
+                %a{:href => "#"}
+                  %img.square_image{:alt => "", :data => "1", :src => "images/content/dummy-man01.png"}/
+              %li.square.orange.span1
+                %a{:href => "#"}
+                  %img.square_image{:alt => "", :data => "1", :src => "images/content/dummy-man01.png"}/
+              %li.square.green.text-holder.span1
+                %img{:alt => "", :src => "images/layout/square-transparent.png"}/
+                %span.text{"txt-data" => "1"}
+                  %a{:href => "#"}
+                    “Duis id aliquam purus. nulla sodales auctor pretium.”
+                    %i.lees-meer lees meer &raquo;
+              %li.square.magenta.span1
+                %a{:href => "#"}
+                  %img.square_image{:alt => "", :data => "1", :src => "images/content/dummy-man01.png"}/
+              %li.square.yellow.span1
+                %a{:href => "#"}
+                  %img.square_image{:alt => "", :data => "1", :src => "images/content/dummy-man01.png"}/
+              %li.square.cyan.span1
+                %a{:href => "#"}
+                  %img.square_image{:alt => "", :data => "2", :src => "images/content/dummy-man01.png"}/
+              %li.square.orange.text-holder.span1
+                %img{:alt => "", :src => "images/layout/square-transparent.png"}/
+                %span.text{"txt-data" => "2"}
+                  %a{:href => "#"}
+                    “Duis id aliquam purus. nulla sodales auctor pretium.”
+                    %i.lees-meer lees meer &raquo;
+              %li.square.green.span1
+                %a{:href => "#"}
+                  %img.square_image{:alt => "", :data => "2", :src => "images/content/dummy-man01.png"}/
+        .item
+          .row
+            %ul.unstyled.inline
+              %li.square.magenta.text-holder.span1
+                %img{:alt => "", :src => "images/layout/square-transparent.png"}/
+                %span.text
+                  %a{:href => "#"}
+                    “Duis id aliquam purus. nulla sodales auctor pretium.”
+                    %i.lees-meer lees meer &raquo;
+              %li.square.orange.text-holder.span1
+                %img{:alt => "", :src => "images/layout/square-transparent.png"}/
+                %span.text
+                  %a{:href => "#"}
+                    “Duis id aliquam purus. nulla sodales auctor pretium.”
+                    %i.lees-meer lees meer &raquo;
+              %li.square.green.span1
+                %a{:href => "#"}
+                  %img.square_image{:alt => "", :src => "images/content/dummy-man01.png"}/
+              %li.square.orange.text-holder.span1
+                %img{:alt => "", :src => "images/layout/square-transparent.png"}/
+                %span.text
+                  %a{:href => "#"}
+                    “Duis id aliquam purus. nulla sodales auctor pretium.”
+                    %i.lees-meer lees meer &raquo;
+              %li.square.green.text-holder.span1
+                %img{:alt => "", :src => "images/layout/square-transparent.png"}/
+                %span.text
+                  %a{:href => "#"}
+                    “Duis id aliquam purus. nulla sodales auctor pretium.”
+                    %i.lees-meer lees meer &raquo;
+              %li.square.yellow.span1
+                %a{:href => "#"}
+                  %img.square_image{:alt => "", :src => "images/content/dummy-man01.png"}/
+              %li.square.cyan.span1
+                %a{:href => "#"}
+                  %img.square_image{:alt => "", :src => "images/content/dummy-man01.png"}/
+              %li.square.orange.span1
+                %a{:href => "#"}
+                  %img.square_image{:alt => "", :src => "images/content/dummy-man01.png"}/
+        .item
+          .row
+            %ul.unstyled.inline
+              %li.square.green.span1
+                %a{:href => "#"}
+                  %img.square_image{:alt => "", :src => "images/content/dummy-man01.png"}/
+              %li.square.orange.span1
+                %a{:href => "#"}
+                  %img.square_image{:alt => "", :src => "images/content/dummy-man01.png"}/
+              %li.square.cyan.text-holder.span1
+                %img{:alt => "", :src => "images/layout/square-transparent.png"}/
+                %span.text
+                  %a{:href => "#"}
+                    “Duis id aliquam purus. nulla sodales auctor pretium.”
+                    %i.lees-meer lees meer &raquo;
+              %li.square.orange.text-holder.span1
+                %img{:alt => "", :src => "images/layout/square-transparent.png"}/
+                %span.text
+                  %a{:href => "#"}
+                    “Duis id aliquam purus. nulla sodales auctor pretium.”
+                    %i.lees-meer lees meer &raquo;
+              %li.square.green.span1
+                %a{:href => "#"}
+                  %img.square_image{:alt => "", :src => "images/content/dummy-man01.png"}/
+              %li.square.green.text-holder.span1
+                %img{:alt => "", :src => "images/layout/square-transparent.png"}/
+                %span.text
+                  %a{:href => "#"}
+                    “Duis id aliquam purus. nulla sodales auctor pretium.”
+                    %i.lees-meer lees meer &raquo;
+              %li.square.orange.text-holder.span1
+                %img{:alt => "", :src => "images/layout/square-transparent.png"}/
+                %span.text
+                  %a{:href => "#"}
+                    “Duis id aliquam purus. nulla sodales auctor pretium.”
+                    %i.lees-meer lees meer &raquo;
+              %li.square.cyan.text-holder.span1
+                %img{:alt => "", :src => "images/layout/square-transparent.png"}/
+                %span.text
+                  %a{:href => "#"}
+                    “Duis id aliquam purus. nulla sodales auctor pretium.”
+                    %i.lees-meer lees meer &raquo;
+      / carousel nav
+      %a.carousel-control.left{"data-slide" => "prev", :href => "#myCarousel"}
+      %a.carousel-control.right{"data-slide" => "next", :href => "#myCarousel"}
+      / /carousel
+    / /row
+  / /myCarousel
