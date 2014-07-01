@@ -319,7 +319,7 @@ body {
     position: relative;
     clear: both;
     padding-top: 20px;
-  
+   
     height: 0px;
 }
   
@@ -675,7 +675,9 @@ background: #428bca;
 }
 
 
-
+.navbar-fixed-bottom {
+    z-index: 0000;
+}
  
 
 
