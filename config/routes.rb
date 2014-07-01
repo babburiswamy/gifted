@@ -1,5 +1,6 @@
 IAmGifted::Application.routes.draw do
- 
+  root to: "staticpages#home"
+
   get "comments/index"
   get "comments/create"
   get "comments/show"
