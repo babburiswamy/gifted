@@ -1,15 +1,33 @@
-%div{"ng-app" => "myapp", "ng-controller" => "MainController"}
+%div{"ng-controller" => "MainController"}
   .container
     %header
-      %h1 Draggables
+      %h1 LETTERS
     %section
-      %div{:draggable => "true", "ng-repeat" => "drag_type in drag_types"} {{drag_type.name}}
+      %div{:draggable => "true", "ng-repeat" => "drag_type in drag_types"} {{drag_type.name}} 
   .container
     %header
-      %h1 Drop Schtuff Here
+      %h1 Drop Capitals Here
     %section{:droppable => "true"}
-      %div
-        %span You dragged in:
-        %span{"ng-repeat" => "name in items"}
-          %span{"ng-show" => "$index != 0"} ,
-          {{name}}
+      %span You have dropped:
+      %span{"ng-repeat" => "name in items"}
+        %span{"ng-show" => "$index != 0"} ,
+        {{name}}
+
+  .row
+    %br
+    %ul.pager
+      %li
+        = link_to "previous",  staticpages_activity3_path
+      %li
+        = link_to "next",  staticpages_activity1_path
+     
+
+
+
+
+
+
+
+
+
+  

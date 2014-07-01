@@ -1,0 +1,27 @@
+%button.btn.btn-default{"data-target" => "#myModal","data-toggle" => "modal"}= "Write a Comment"
+#myModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog
+    .modal-content
+      .modal-header
+        %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} &times;
+        %h4#myModalLabel.modal-title Comment
+        = form_for Comment.new , :html => { :class => "form-horizontal", :role => "form"} do |f| 
+          .modal-body
+            .row
+              .col-sm-3
+                = f.label "Name:", :class => 'form-control'
+              .col-sm-9
+                = f.text_field "name", :class => 'form-control' , :placeholder => "Name"
+            .row
+              .col-sm-3
+                = f.label "Email:", :class => 'form-control'
+              .col-sm-9
+                = f.text_field "email", :class => 'form-control' , :placeholder => "abc@gmail.com"
+            .row
+              .col-sm-3
+                = f.label "Comment:", :class => 'form-control'
+              .col-sm-9
+                = f.text_area "comment", :class => 'form-control' , :placeholder => "Enter your comment here"
+          .modal-footer
+            %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Close
+            = button_tag "Save", :type => "submit", :class => 'btn btn-warning'

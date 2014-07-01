@@ -1,65 +1,21 @@
-%html
-  %body
-    %form
-      %p{:style => "font-family:arial;color:green;font-size:20px; text-decoration:underline;"} Has, Have:
-      %br
-        %h4
-          %ol{:start => "1. "}
-            %li
-              We use
-              %b has
-              with singular nouns and pronouns:
-              %br
-                %br
-                  %p
-                    A triangle
-                    %b has
-                    three sides.
-                    %br
-                      %p
-                        He
-                        %b has
-                        a new motorcycle.
-                        %br
-                          %br
-                            %li
-                              We use
-                              %b have
-                              with plural nouns and pronouns:
-                              %br
-                                %br
-                                  %p
-                                    All the rooms
-                                    %b have
-                                    windows in them.
-                                    %br
-                                      %p
-                                        We
-                                        %b have
-                                        a good library.
-                                        %br
-                                          %br
-                                            %li
-                                              With I and you,we always use
-                                              %b have:
-                                              %br
-                                                %br
-                                                  %p
-                                                    I
-                                                    %b have
-                                                    a bright idea.
-                                                    %br
-                                                      %p
-                                                        You
-                                                        %b have
-                                                        a new bat. ( You for one boy)
-                                                        %br
-                                                          %p
-                                                            You
-                                                            %b have
-                                                            new bats. ( you for more than one boy)
-                                                            %ul.pager
-                                                              .pull-left
-                                                                %li= link_to "previous",   pronouns_pronoun2_path
-                                                              .pull-right
-                                                                %li= link_to "next" ,   staticpages_adjectives_path
+.row
+  .well
+    %h2 Has, Have:
+    %h4 We use "has" with singular nouns and pronouns:
+    %h4 eg:A triangle has three sides.
+    %h4 He has a new motorcycle.
+    %h4 We use "have" with plural nouns and pronouns:
+    %h4 All the rooms have windows in them.
+    %h4 We have a good library.
+    %h4 With I and you,we always use have:
+    %h4 eg:I have a bright idea.
+    %h4 You have a new bat. ( You for one boy)
+    %h4 You have new bats. ( you for more than one boy)
+.row
+  %br
+  %ul.pager
+    %li
+      = link_to "previous",  pronouns_pronoun2_path
+    %li
+      = link_to "next",  staticpages_adjectives_path
+                                                    

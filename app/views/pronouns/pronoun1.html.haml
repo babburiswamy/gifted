@@ -1,48 +1,26 @@
-%html
-  %form
-    %p{:style => "font-family:arial;color:green;font-size:20px; text-decoration:underline;"} Is, are:
-    
-    %h4
-      %ol{:start => "1. "}
-        %li
-          We use is with singular nouns and pronouns.
-          %br
-          The chair is old.
-          %br
-          The train is late.
-          %br
-          He is a postman.
-    %h4
-      %ol{:start => "2. "}
-        %li
-          We use are with plural nouns and pronouns.
-          %br
-        These chairs are old.
-        %br
-        All the trains are late.
-        %br
-        They are students of this school.
-        %br
-        %br
-        %b However, there are two important points to remember.
-    %h4
-      %ol{:start => "3. "}
-        %li
-          I is also a singular pronoun. With  I  we use am.
-          %br
-          I am your friend. I am very hungry.
-    %h4
-      %ol{:start => "4. "}
-        %li
-          With you, we always use are, whether you stands for one person or
-          %br
-          for more than one person: You are a student. ( You for one student)
-          %br
-          You are students. 
-          %br
-          %ul.pager
-            .pull-left
-              %li= link_to "previous",   pronouns_pronoun_path
-            .pull-right
-              %li= link_to "next" , pronouns_pronoun2_path
+.well
+  %h2 Is, are:
+  %h4 We use is with singular nouns and pronouns.
+  
+  %h4 eg:The chair is old.
+  %h4  The train is late.
+  %h4  He is a postman.
+  
+  %h4 We use are with plural nouns and pronouns.
+  %h4 eg:  These chairs are old.
+  %h4   All the trains are late.
+  %h4  They are students of this school.
+  %b However, there are two important points to remember.
+  %h4 I is also a singular pronoun. With  I  we use am.
+  %h4 I am your friend. I am very hungry.
+  %h4  With you, we always use are, whether you stands for one person or
+  %h4  for more than one person: You are a student. ( You for one student)
+  %h4  You are students. 
+.row
+  %br
+  %ul.pager
+    %li
+      = link_to "previous",  pronouns_pronoun_path
+    %li
+      = link_to "next",  pronouns_pronoun2_path
 

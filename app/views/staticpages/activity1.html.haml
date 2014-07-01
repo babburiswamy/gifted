@@ -1,27 +1,47 @@
-%html
-  %body
-    %form
-      .col-sm-4
-        = image_tag("activity1.jpg", :alt => "rss feed", :class => "img-rounded" , :style => "height:360px;width:350px")
-      .col-sm-4
-        %p{:style => "font-family:arial;color:green;font-size:20px;text-decoration:underline;"} Materials:
-        %h4
-          %ol{:start => "A"}
-            %li Colorful paper in squares 15 x 15 cm (6 x 6 in). You'll need five of each color.
-            %li Tissue paper.
-            %li Glue stick.
-            %li Craft glue.
-            %li Hot glue gun.
-            %li Sticky tape or Washi tape.
-            %li Scissors.
-            %li Wooden skewers.
-            .row
-              %br
-              %ul.pager
-                %li
-                  = link_to "previous", staticpages_programs_path
-                %li
-                  = link_to "next", staticpages_activity2_path
-
-          
+.well
+  %center
+    %h2 Nouns -Naming Words
+  %h4 Look at the following sentences:
+  %h4 1. The boy is jumping.
+  %h4 The word boy is the name of a person.
+  %h4 2. The dog is barking.
+  %h4 The word dog is the name of an animal.
+  %h4 3. That is a temple.
+  %h4 The word temple is the name of a place.
+  %h4 4. He has a bat.
+  %h4 The word bat is the name of a thing.
+  %h4 Boy, dog, temple and bat are naming words. Naming words are called nouns.
+.well
+  %h2 Exercise-1	
+  %div{"ng-controller" => "MainController1"}
+    .container
+      %header
+        %h2  Choose nouns from the following to add three more nouns to each column
+        %section
+          %div{:draggable => "true", "ng-repeat" => "drag_type in drag_types"} {{drag_type.name}}
+    .container
+      %header
+        %h2 Drop Persons here
+        %section{:droppable => "true" , :category => "animals"}
+          %span You have dropped:
+          %span{"ng-repeat" => "name in items" }
+            %span{"ng-show" => "$index != 0"} ,
+            {{name}}   
+    .container
+      %header
+        %h2 Drop Things here
+        %section{:droppable => "true", :category => "things"}
+          %span You have dropped:
+          %span{"ng-repeat" => "name in items"}
+            %span{"ng-show" => "$index != 0"} ,
+            {{name}} 
+            
+.row
+  %br
+  %ul.pager
+    %li
+      = link_to "previous",   staticpages_activity5_path
+    %li
+      = link_to "next" , nouns_common_noun_path
         
+

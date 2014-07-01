@@ -1,0 +1,56 @@
+.well1
+  %h4 Fill in the words with A or AN
+%h4  eg:   
+.form-group{ :ng_controller => "Activity15Controller"}
+  .row
+    .col-sm-2
+      = image_tag "egg.png" , :width => "100", :height => "100"
+    .col-sm-2
+      %br
+      = label_tag "an egg", nil, :class => "form-control"
+    .col-sm-2
+      = image_tag "apple.png" , :width => "100", :height => "100"
+    .col-sm-2
+      %br
+      = text_field "apple",nil, :class => "form-control" ,"ng-model" => "apple"
+     
+  .row
+    .col-sm-2
+      %br
+      = image_tag "hen.png" , :width => "100", :height => "100"
+    .col-sm-2
+      %br
+      %br
+      = text_field "hen",nil, :class => "form-control" ,"ng-model" => "hen"
+    .col-sm-2
+      %br
+      = image_tag "oven.png" , :width => "100", :height => "100"
+    .col-sm-2
+      %br 
+      %br
+      = text_field "oven",nil, :class => "form-control" ,"ng-model" => "oven"
+  .row
+    .col-sm-2
+      %br
+      = image_tag "cake.png" , :width => "100", :height => "100"
+    .col-sm-2
+      %br
+      %br
+      = text_field "cake",nil, :class => "form-control" ,"ng-model" => "cake"
+      = link_to "submit", "#", :ng_click => "validate()", :class => "btn btn-warning"    
+  .row
+    %br
+    %ul.pager
+      %li
+        = link_to "previous",  staticpages_activity17_path
+      %li
+        = link_to "next",  staticpages_activity16_path
+     
+       
+          
+
+
+
+
+
+

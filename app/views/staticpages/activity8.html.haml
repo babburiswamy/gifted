@@ -1,19 +1,42 @@
-%html
-  %body
-    %form
-      .col-sm-4
-        = image_tag("activity8.jpg", :alt => "rss feed", :class => "img-rounded" , :style => "height:360px;width:350px")
-      .col-sm-4
-        %p{:style => "font-family:arial;color:green;font-size:20px;text-decoration:underline;"} Step7:
-        %h4
-          Fold the lower sides of the triangle upwards.
-          .row
-            %br
-            %ul.pager
-              %li
-                = link_to "previous",  staticpages_activity7_path
-              %li
-                = link_to "next",  staticpages_activity9_path
+.well
+  %h4 Nouns that end in ‘s’ , ‘sh’ , ‘ch’ , ‘o’ , and ‘x’ form their plural by adding ‘es’ to them.
+%h4 eg:   
+.form-group{ :ng_controller => "Activity6Controller"}
+  .row
+    .col-sm-1
+      = label_tag "Box:", nil, :class => "form-control"
+    .col-sm-1
+      = label_tag "Boxes", nil, :class => "form-control"
+    .col-sm-1
+      = label_tag "Bench:", nil, :class => "form-control"
+    .col-sm-1
+      = text_field "bench",nil, :class => "form-control" ,"ng-model" => "bench"
+     
+  .row
+    .col-sm-1
+      = label_tag "bus:", nil, :class => "form-control"
+    .col-sm-1
+      = text_field "bus",nil, :class => "form-control" ,"ng-model" => "bus"
+    .col-sm-1
+      = label_tag "hero:", nil, :class => "form-control"
+    .col-sm-1
+      = text_field "hero",nil, :class => "form-control" ,"ng-model" => "hero"
+  .row
+    .col-sm-1
+      = label_tag "bush:", nil, :class => "form-control"
+    .col-sm-1
+      = text_field "bush",nil, :class => "form-control" ,"ng-model" => "bush"
+      %br
+      = link_to "submit", "#", :ng_click => "validate()", :class => "btn btn-warning"  
+  .row
+    %br
+    %ul.pager
+      %li
+        = link_to "previous",  staticpages_activity5_path
+      %li
+        = link_to "next",  nouns_common_noun_path
+
+          
 
           
 

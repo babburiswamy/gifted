@@ -1,33 +1,106 @@
-%html
-  %body
-    %center
-      %h1.italic I AM GIFTED
-      .container-fluid 
-        #custom_carousel.carousel.slide{"data-interval" => "2500", "data-ride" => "carousel"} 
-          .carousel-inner 
-            .item.active
-              .container-fluid 
-                .row 
-                  .col-md-3 
-                  = image_tag "11.jpg", :width => "1000", :height => "250" 
-               
-            .item
-              .container-fluid 
-                .row 
-                  .col-md-3 
-                    = image_tag "12.jpg", :width => "1000", :height => "250" 
-            .item 
-              .container-fluid 
-                .row 
-                  .col-md-3 
-                    = image_tag "13.jpg", :width => "1000", :height => "250" 
-            .item 
-              .container-fluid 
-                .row 
-                  .col-md-3 
-                    = image_tag "14.jpg", :width => "1000", :height => "250" 
-          
-     
-     
+#content-container
+  .row
+    .col-md-12
+      #Carousel.carousel.slide
+        %ol.carousel-indicators
+          %li.active{"data-slide-to" => "0", "data-target" => "#Carousel"}
+          %li{"data-slide-to" => "1", "data-target" => "#Carousel"}
+          %li{"data-slide-to" => "2", "data-target" => "#Carousel"}
+        / Carousel items
+        .carousel-inner
+          .item.active
+            .row
+              .col-sm-3
+                %a.thumbnail{:href => "#"}
+                  = image_tag "9.jpg", :width => "80%", :height => "60%;" 
+              .col-sm-3
+                %a.thumbnail{:href => "#"}
+                  = image_tag "12.jpg", :width => "80%;", :height => "60%;" 
+              .col-sm-3
+                %a.thumbnail{:href => "#"}
+                  = image_tag "16.jpg" , :width => "80%;", :height => "60%;" 
+              .col-sm-3
+                %a.thumbnail{:href => "#"}
+                  = image_tag "8.jpg" , :width => "80%;", :height => "60%;" 
+              .col-sm-3
+                %a.thumbnail{:href => "#"}
+                  = image_tag "7.jpg" , :width => "80%;", :height => "60%;" 
+              
+            / .row
+          / .item
+          .item
+            .row
+              .col-sm-3
+                %a.thumbnail{:href => "#"}
+                  = image_tag "6.jpg" , :width => "80%;", :height => "40%;" 
+              .col-sm-3
+                %a.thumbnail{:href => "#"}
+                  = image_tag "11.jpg", :width => "80%;", :height => "60%;" 
+              .col-sm-3
+                %a.thumbnail{:href => "#"}
+                  = image_tag "verb1.jpg" , :width => "80%;", :height => "60%;" 
+              .col-sm-3
+                %a.thumbnail{:href => "#"}
+                  = image_tag "15.jpeg" , :width => "80%;", :height => "60%;" 
+              .col-sm-3
+                %a.thumbnail{:href => "#"}
+                  = image_tag "3.jpg", :width => "80%", :height => "60%;" 
+             
+            / .row
+          / .item
+          .item
+            .row
+              .col-sm-3
+                %a.thumbnail{:href => "#"}
+                  = image_tag "s.jpg" , :width => "80%;", :height => "60%;" 
+              .col-sm-3
+                %a.thumbnail{:href => "#"}
+                  = image_tag "s1.jpg", :width => "80%;", :height => "60%;" 
+              .col-sm-3
+                %a.thumbnail{:href => "#"}
+                  = image_tag "17.jpg" , :width => "80%;", :height => "60%;" 
+              .col-sm-3
+                %a.thumbnail{:href => "#"}
+                  = image_tag "3.jpg" , :width => "80%;", :height => "60%;" 
+              .col-sm-3
+                %a.thumbnail{:href => "#"}
+                  = image_tag "12.jpg", :width => "80%", :height => "60%;" 
+            / .row
+          / .item
+        / .carousel-inner
+        %a.left.carousel-control{"data-slide" => "prev", :href => "#Carousel"} ‹
+        %a.right.carousel-control{"data-slide" => "next", :href => "#Carousel"} ›
+      / .Carousel
+/ .container
+.container
+  %br
+  .row 
+    .col-sm-7
+      #c-container
+        .well3
+          %br
+          %br
+          %p{:align => "justify"}
+            %i.italic &nbsp &nbsp I AM GIFTED is an English proficiency program, conducting classes from 2009 onwards. This is an environment which not only makes learning fun for the students but also empowers the young learners to express themselves confidently and creatively.
+
+            %br
+            %i.italic &nbsp &nbsp You have been absorbing grammar since the day you were born. Babies learn to use language by listening to other people talk. You might wonder why it is important to learn good Grammar - After all, you can understand the essence of what people are saying. Good Written and Spoken grammar is extremely important because it will help you say exactly what you mean, without being misunderstood.
+
+            %br
+            %i.italic  &nbsp &nbsp So, Are you ready to work on your Grammar skills? If so, you are in the right place. This program will help you to fine tune your speaking and writing skills by explaining grammatical concepts.
+            %br
+            %br
+            %br                             
+    .col-sm-5
+      .well2
         
-                                 
+        %marquee{:behavior => "scroll", :direction => "up", :height => "250", :scrollamount => "1"}
+          - Comment.all.each do |comment |
+            %td
+              = comment.comment
+              %strong=comment.name
+              %br
+      = render "form_modal1"
+          
+          
+          

@@ -1,0 +1,48 @@
+.well1
+  %h4 Fill in the words with A or AN
+%h4  eg:   
+.form-group{ :ng_controller => "Activity16Controller"}
+  .row
+    .col-sm-2
+      = image_tag "tree.png" , :width => "100", :height => "100"
+    .col-sm-2
+      %br
+      = text_field "tree",nil, :class => "form-control" ,"ng-model" => "tree"
+    .col-sm-2
+      = image_tag "iron.png" , :width => "100", :height => "100"
+    .col-sm-2
+      %br
+      = text_field "iron",nil, :class => "form-control" ,"ng-model" => "iron"
+     
+  .row
+    .col-sm-2
+      %br
+      = image_tag "horse.png" , :width => "100", :height => "100"
+    .col-sm-2
+      %br
+      %br
+      = text_field "horse",nil, :class => "form-control" ,"ng-model" => "horse"
+    .col-sm-2
+      %br
+      = image_tag "ring.png" , :width => "100", :height => "100"
+    .col-sm-2
+      %br 
+      %br
+      = text_field "ring",nil, :class => "form-control" ,"ng-model" => "ring"
+  .row
+    .col-sm-2
+      %br
+      = image_tag "goat.png" , :width => "100", :height => "100"
+    .col-sm-2
+      %br
+      %br
+      = text_field "goat",nil, :class => "form-control" ,"ng-model" => "goat"
+      = link_to "submit", "#", :ng_click => "validation()", :class => "btn btn-warning"    
+  .row
+    %br
+    %ul.pager
+      %li
+        = link_to "previous",  staticpages_activity15_path
+      %li
+        = link_to "next",  staticpages_capital_letters_path
+          

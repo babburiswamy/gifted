@@ -1,45 +1,23 @@
-%html
-  %body
-    #form-left2
-      %p{:style => "font-family:arial;color:green;font-size:20px;text-decoration:underline;"} Pronouns:
-      %h4
-        %ol{:start => "1."}
-          %li
-            \&nbsp&nbsp A pronoun is a word used in place of a noun.
-            %br
-            e.g Mrs. Veena Gupta is the Principal of this school.She is a great educationalist.All the students respect her.
-            %br
-            %br
-            She,her -->  Mrs.Veena Gupta
-            %br
-            we use pronouns because if we kept repeating the nouns, our sentence would look awkward.
-            %br
-            %br
-            .row
-              #divstylebox2
-                %br
-                .col-sm-6
-                  %p{:style => "font-family:arial;color:green;font-size:20px;text-decoration:underline;"} Singular Pronoun
-                  %h4 
-                    I, me, my
-                    you, your, yours	
-                    she, her, hers
-                    he, him, his	
-                    it, its
-                .col-sm-6
-                  %p{:style => "font-family:arial;color:green;font-size:20px;text-decoration:underline;"} Plural Pronouns
-                  %h4
-                    we, us, our, ours
-                    you, your, yours
-                    they, them
-                    their, theirs
-                    %br
-                    %br
-                    %ul.pager
-                      .pull-left
-                        %li= link_to "previous",   staticpages_singular_plural_path
-                      .pull-right
-                        %li= link_to "next" ,pronouns_pronoun1_path
-
+.well
+  %h2 Pronouns:
+  %h4 &nbsp&nbsp A pronoun is a word used in place of a noun.
+  %br
+  %h4  e.g Mrs. Veena Gupta is the Principal of this school.She is a great educationalist.All the students respect her.
+  %br
+  %br
+  %h4 She,her -->  Mrs.Veena Gupta
+  %br
+  %h4 we use pronouns because if we kept repeating the nouns, our sentence would look awkward.
+  
+  %h2  Singular Pronoun
+  %h4 I, me, my,you, your, yours,she, her, hers, he, him, his, it, its
+  %h2 Plural Pronouns
+  %h4 we, us, our, ours,you, your, yours,they, them,their, theirs
+  %br
+%ul.pager
+  %li= link_to "previous",   nouns_common_noun_path
+  %li= link_to "next" ,pronouns_pronoun1_path
+             
+                
                     
-                    
+                  

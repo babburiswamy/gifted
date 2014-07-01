@@ -1,78 +1,13 @@
-%html
-  %body
-    %form
-      %p{:style => "font-family:arial;color:green;font-size:20px; text-decoration:underline;"} Adjectives:
-      %br
-        %h4
-          %ol{:type => "A"}
-            %li
-              %b Adjectives are describing words.
-              %br
-              %ol{:start => "1. "}
-                %br
-                %li
-                  Gopi is an old man.
-                  %br
-                  %p
-                    The word
-                    %b old
-                    tells us what kind of man Gopi is. It describes Gopi.
-                    %br
-                    %li
-                      This is a
-                      %b black
-                      dog.
-                      %br
-                      %p
-                        The word black describes the dog.
-                        %br
-                        %li
-                          Gita has
-                          %b three
-                          pencils.
-                          %br
-                          %p
-                            The word three tells us how many pencils Gita has.
-                            %br
-                            %p
-                              Old, black, and three are describing words and are called
-                              = succeed "." do
-                                %b adjectives
-                                %ol{:type => "B"}
-                                  %b Now look at these sentences.
-                                  %br
-                                  %br/
-                                  %p
-                                    \&nbsp&nbsp Honey is sweet.
-                                    %br
-                                    %p
-                                      \&nbsp&nbsp The sky is blue.
-                                      %br
-                                      %p
-                                        \&nbsp&nbsp John is lazy.
-                                        %br
-                                        %br
-                                        %p
-                                          In the sentences above
-                                          %b sweet, blue and lazy
-                                          are describing words.
-                                          They describe honey, the sky and John respectively and are
-                                          = succeed "" do
-                                            %b adjectives
-                                            But they are placed after the nouns they describe.
-                                            %br
-                                            %br
-                                            %p
-                                              *
-                                              %font{:color => "red"}
-                                                Adjectives tell us what kind of, how many, what colour, etc.,
-                                                %p &nbsp persons, places, animals and things are.
-                                                %ul.pager
-                                                  .pull-left
-                                                    %li= link_to "previous",   pronouns_pronoun3_path
-                                                  .pull-right
-                                                    %li= link_to "next" ,   staticpages_adjimage_path
-
-                                                
-                          
-                                                
+.row
+  .well
+    %h2 Adjectives:
+    %h4 Adjectives are describing words.
+    %h4 eg: Gopi is an old man.(The word old tells us what kind of man Gopi is. It describes Gopi.)
+    %h4 This is a black dog.(The word black describes the dog.)
+    %h4 Gita has three pencils.(The word three tells us how many pencils Gita has.)
+    %h4 Old, black, and three are describing words and are called adjectives
+.row
+  %br
+  %ul.pager
+    %li
+      = link_to "previous",  pronouns_pronoun3_path                                      

@@ -1,58 +1,22 @@
-%html
-  %form
-    %p{:style => "font-family:arial;color:green;font-size:20px; text-decoration:underline;"} was, were:
-    %h4
-      %ol{:start => "1."}
-        %li
-          We use 
-          %b was
-          with singular nouns and pronouns:
-          %br
-          The book
-          %b was 
-          on the table.
-          %br
-          I 
-          %b was
-          sorry for my mistake.
-          %br
-          He 
-          %b was
-          very lucky.
-      %ol{:start => "2."}
-        %li
-          We use 
-          %b were
-          with plural nouns and pronouns.
-          %br
-          The books
-          %b were 
-          on the table.
-          %br
-          we
-          %b were
-          neighbours at Agra.
-          %br
-          They
-          %b were
-          good speakers.
-      %ol{:start => "3."}
-        %li
-          With you, we always use 
-          %b were
-          whether you stands for one person or
-          %br
-          more than one person.You
-          %b were
-          the headboy last year.
-          %br
-          ( you for one boy) You
-          %b were
-          late yesterday. ( you for more than one boy)
-          %br
-          %ul.pager
-            .pull-left
-              %li= link_to "previous",   pronouns_pronoun1_path
-            .pull-right
-              %li= link_to "next" ,  pronouns_pronoun3_path
+.row
+  .well
+    %h2  was, were:
+    %h4 We use  was with singular nouns and pronouns:
+    %h4 eg:The book was on the table.
+    %h4 I was sorry for my mistake.
+    %h4 He was very lucky.
+    %h4 We use were with plural nouns and pronouns.
+    %h4 eg:The books were on the table.
+    %h4 we were neighbours at Agra.
+    %h4 They were good speakers.
+    %h4 With you, we always use were whether you stands for one person more than one person.
+    %h4 You were the headboy last year.( you for one boy) 
+    %h4 You were late yesterday. ( you for more than one boy)
+.row
+  %br
+  %ul.pager
+    %li
+      = link_to "previous",  pronouns_pronoun1_path
+    %li
+      = link_to "next",  pronouns_pronoun3_path
 

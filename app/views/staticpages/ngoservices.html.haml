@@ -1,33 +1,27 @@
-.row
-  .col-sm-3
-    = link_to image_tag(("10.jpg"), height: "160",  width: "250"  ) ,"/staticpages/team"
-  .col-sm-3
-    = link_to image_tag(("21.png"), height: "120",  width: "200"  ) ,"/staticpages/events" 
-  .col-sm-6
-    .well
-      %h4 Try Ultimately Leads to Success But Success Can Never Happen Without Trying. Teach Children That Trying is Far More Important Than Succeding.
-      %h4 That Is What We Are Doing. "UDDAN"
-     
+%left
+  %h2 UDAAN
+  .row
+    .col-sm-9
+      #well7
+        %h4  &nbsp  &nbsp  Try Ultimately Leads to Success But Success Can Never Happen Without Trying. Teach Children That Trying is Far More Important Than Succeding.
+        %h4  &nbsp  &nbsp That Is What We Are Doing. "UDDAN"
+        %h4 Parents, We invite you to engage your children in a world class learning experience on weekends. We will teach your child the best ways of using the important skills of communication - LISTENING, READING, WRITING, SPEAKING. Our English classes will be integrated coaching for all the four skills for effective communication in English.
+        %h4 The way you present yourself affects the people you will know and the opportunities you will get in life. So, it is in your best interest to make sure your Grammar is at par.
 
-.row
-  .col-sm-6
-    %br
-    = link_to image_tag(("30.jpg"), height: "160",  width: "250"  ) ,"/staticpages/distributions"
-    %br
-  .col-sm-3
-    .well
-      %marquee{:behavior => "scroll", :direction => "up", :height => "130", :scrollamount => "1"}
-        - Comment.all.each do |comment |
-          %td
-            = comment.comment
-            %strong=comment.name
-          %br
-    = render "form_modal"
-.row
-  .col-sm-2
-    %br
-    = link_to image_tag(("40.jpg"), height: "150",  width: "150"  ) ,"/staticpages/tieup"
-  .col-sm-2
-    %br
-    = link_to image_tag(("50.jpg"), height: "150",  width: "250"  ) ,"/staticpages/fame"
+        %h4 So, Are you ready to work on your Grammar skills? If so, you are in the right place. This program will help you to fine tune your speaking and writing skills by explaining grammatical concepts. As the program advances, your Grammar skills are sure to shine.
 
+        %h4 At I AM GIFTED, we will make the foundation of English language very strong by covering the basics of English Grammar. A strong foundation is very important for correct development of the language. Our teaching techniques will be activity and fun oriented so that the child learns while actually playing games.
+
+        %h4 Here, we teach them learn new words with ease and understand difficult sentences by exploring more information from various resources available. Your child will learn to listen and understand English in other accents also. He will be able to speak correct sentences and also learn to pick up his own mistakes.
+
+        %h4 So what are you waiting for?? Come, Join this group and take a first step towards a confident, powerful tomorrow!!!!
+
+    .col-sm-3
+      = render 'staticpages/ngoservices'
+    
+ 
+
+
+    
+
+  

@@ -7,7 +7,7 @@ class CommentsController < ApplicationController
     @comment = Comment.new(comment_params)
     if @comment.save
       flash[:success] = I18n.t :success, :scope => [:comment, :create]
-      redirect_to staticpages_ngoservices_path
+      redirect_to staticpages_home_path
     else
       render "index"
     end

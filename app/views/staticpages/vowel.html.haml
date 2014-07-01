@@ -1,31 +1,34 @@
 %html
   %body
-    %p{:style => "font-family:arial;color:green;font-size:20px; text-decoration:underline;"} Vowels and Consonants:
-    %h4 Of the 26 letters 5 are vowels and 21 are consonants.
-    %h3
-      %font{:color => "red"} a
-      \&nbsp b &nbsp  c &nbsp  d &nbsp
-      %font{:color => "red"} e
-      \&nbsp f &nbsp  g &nbsp h &nbsp
-      %font{:color => "red"} i
-      \&nbsp j &nbsp k &nbsp l &nbsp m &nbsp n &nbsp
-      %font{:color => "red"} o
-      \&nbsp p &nbsp q &nbsp r &nbsp s &nbsp t &nbsp
-      %font{:color => "red"} u
-      \&nbsp v &nbsp  w &nbsp x &nbsp y &nbsp z
-      %br
+    .well
+      %p{:style => "font-family:arial;font-size:20px; text-decoration:underline;"} Vowels and Consonants:
+      %h4 Of the 26 letters 5 are vowels and 21 are consonants.
+      %h3
+        %font{:color => "red"} a
+        \&nbsp b &nbsp  c &nbsp  d &nbsp
+        %font{:color => "red"} e
+        \&nbsp f &nbsp  g &nbsp h &nbsp
+        %font{:color => "red"} i
+        \&nbsp j &nbsp k &nbsp l &nbsp m &nbsp n &nbsp
+        %font{:color => "red"} o
+        \&nbsp p &nbsp q &nbsp r &nbsp s &nbsp t &nbsp
+        %font{:color => "red"} u
+        \&nbsp v &nbsp  w &nbsp x &nbsp y &nbsp z
+        %br
       %h4
         The five letters in red are known as vowels.
-      %p{:style => "font-family:arial;color:green;font-size:20px;"} Circle the words that begin with a vowel:
-      #divstyle
-        %h4 &nbsp ape &nbsp &nbsp well &nbsp igloo &nbsp owl &nbsp lamp &nbsp &nbsp	ear
         %br
-        %h4 &nbsp grass &nbsphorse &nbsp ice &nbsp eggs	&nbsp farm &nbsp uniform
         %br
-        %ul.pager
-          .pull-left
-            %li
-              = link_to "previous", staticpages_alphabet_path
-          .pull-right
-            %li
-              = link_to "next" ,staticpages_consonants_path
+        %p{:style => "font-family:arial;font-size:20px;text-decoration:underline;"} Tick the words that begin with a vowel:
+        #divstyle
+          %h4 &nbsp ape &nbsp &nbsp well &nbsp igloo &nbsp owl &nbsp lamp &nbsp &nbsp	ear
+          %br
+          %h4 &nbsp grass &nbsphorse &nbsp ice &nbsp eggs	&nbsp farm &nbsp uniform
+          %br
+          %ul.pager
+            .pull-left
+              %li
+                = link_to "previous", staticpages_alphabet_path
+            .pull-right
+              %li
+                = link_to "next" ,staticpages_consonants_path
