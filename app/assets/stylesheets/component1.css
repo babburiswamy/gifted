@@ -1,3 +1,8 @@
+.container1 {
+   
+    padding-left: 10px;
+    padding-right: 0px;
+}
 #panel{
    
     
@@ -207,7 +212,7 @@ transform: translate3d(0,0,0);
     background-image: url('/assets/c7.jpg');
     background-repeat: no-repeat;
     width:100%;
-    height:600px;
+    height:500px;
     background-size: 900px 500px;
     padding: 50px 30px 10px 90px;
     border-radius: 8px;
@@ -267,9 +272,9 @@ transform: translate3d(0,0,0);
 }
 #well8
 {
-    background-image:  url('/assets/b.jpg');
-    padding: 90px;
-    background-size: 1000px 800px;
+    background-image:  url('/assets/12.png');
+    padding: 0px 50px 20px 60px;
+    background-size: 650px 480px;
     background-repeat: no-repeat;
 }
 #accordion
@@ -303,12 +308,22 @@ transform: translate3d(0,0,0);
 
 html,
 body {
-   
   
+    overflow:auto;
+    overflow-x:hidden;
     background-image:url("images.jpeg");
    
 
 }
+.footer{ 
+    position: relative;
+    clear: both;
+    padding-top: 20px;
+  
+    height: 0px;
+}
+  
+
 
 h1.italic{
     color : #F21760;
