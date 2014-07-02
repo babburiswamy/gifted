@@ -1,27 +1,22 @@
-%html
-  %body
-    %form
-      .well
-        %h2 Common Nouns:
-        %h4
-          %p Common nouns name the everyday things around us. A common noun names any person, place or thing.
-          e.g: cup, horse, tree, arm, cheese, book, pencil, car, rabbit, computer
-          %h2 Proper Nouns:
-          %h4
-            &nbsp Proper nouns are names of 
-            specific people, places 
-            and things.
-            %br
-            %br
-          %h4
-            &nbsp Proper nouns always begin
-            with a capital letter.
-            .row
-              %br
-              %ul.pager
-                %li
-                  = link_to "previous",   staticpages_activity5_path
-                %li
-                  = link_to "next" , pronouns_pronoun_path
+#well10
+  .row
+    .col-sm-8
+      %h2 Common Nouns:
+      %h4 Common nouns name the everyday things around us. A common noun names any person, place or thing.
+      %h5 &nbsp &nbsp e.g: cup, horse, tree, arm, cheese, book, pencil, car, rabbit, computer
+      %h2 Proper Nouns:
+      %h4
+        &nbsp Proper nouns are names of 
+        specific people, places 
+        and things.
+      %h4
+        &nbsp Proper nouns always begin
+        with a capital letter.
+    .col-sm-4
+      = link_to image_tag(("back.png"), height: "50px",  width: "50px"  ) ,"/staticpages/activity5"
+      = link_to image_tag(("next.png"), height: "50px",  width: "50px"  ) ,"/pronouns/pronoun"
+      = link_to image_tag(("home.png"), height: "50px",  width: "50px"  ) ,"/staticpages/activity4"
+     
+
                   
                   

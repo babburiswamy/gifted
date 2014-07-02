@@ -1,15 +1,19 @@
-.row
-  .well
-    %h1 Use Of Articles A and An
-    %h4 Words that begin with a consonant sound take a before them.
-    %h3 e.g. a book, a chair, a table, a flower
-  
-    %h4 Words that begin with a vowel sound take an before them.
-    %h3 e.g an apple, an egg, an inkpot, an umbrella, an orange\
-.row`
-%br
-%ul.pager
-  %li
-    = link_to "next",  staticpages_activity15_path
-  %li
-    = link_to "back", staticpages_activity4_path
+#well10
+  .row
+    .col-sm-8
+      %h1 Use Of Articles A and An
+      %h4 Words that begin with a consonant sound take a before them.
+      %h5 &nbsp &nbsp e.g. a book, a chair, a table, a flower
+      %h4 Words that begin with a vowel sound take an before them.
+      %h5 &nbsp &nbsp e.g an apple, an egg, an inkpot, an umbrella, an orange\
+    .col-sm-4
+      = link_to image_tag(("back.png"), height: "50px",  width: "50px"  ) ,"/staticpages/activity4"
+      = link_to image_tag(("next.png"), height: "50px",  width: "50px"  ) ,"/staticpages/activity15"
+      = link_to image_tag(("home.png"), height: "50px",  width: "50px"  ) ,"/staticpages/activity4"
+      %br
+      %br
+      %br
+      %br
+      %br
+      %br
+      %br

@@ -1,23 +1,20 @@
-.well
-  %h2 Pronouns:
-  %h4 &nbsp&nbsp A pronoun is a word used in place of a noun.
-  %br
-  %h4  e.g Mrs. Veena Gupta is the Principal of this school.She is a great educationalist.All the students respect her.
-  %br
-  %br
-  %h4 She,her -->  Mrs.Veena Gupta
-  %br
-  %h4 we use pronouns because if we kept repeating the nouns, our sentence would look awkward.
-  
-  %h2  Singular Pronoun
-  %h4 I, me, my,you, your, yours,she, her, hers, he, him, his, it, its
-  %h2 Plural Pronouns
-  %h4 we, us, our, ours,you, your, yours,they, them,their, theirs
-  %br
-%ul.pager
-  %li= link_to "previous",   nouns_common_noun_path
-  %li= link_to "next" ,pronouns_pronoun1_path
-             
-                
+#well10
+  .row
+    .col-sm-8
+      %h2 Pronouns:
+      %h4 &nbsp A pronoun is a word used in place of a noun.
+      %h5 &nbsp &nbsp &nbsp e.g Mrs. Veena Gupta is the Principal of this school.She is a great educationalist.All the students respect her.
+      %h5 &nbsp &nbsp &nbsp She,her -->  Mrs.Veena Gupta
+      %h4 we use pronouns because if we kept repeating the nouns, our sentence would look awkward.
+      %h2  Singular Pronoun
+      %h4 I, me, my,you, your, yours,she, her, hers, he, him, his, it, its
+      %h2 Plural Pronouns
+      %h4 we, us, our, ours,you, your, yours,they, them,their, theirs
+      %br
+    .col-sm-4
+      = link_to image_tag(("back.png"), height: "50px",  width: "50px"  ) ,"/nouns/common_noun"
+      = link_to image_tag(("next.png"), height: "50px",  width: "50px"  ) ,"/pronouns/pronoun1"
+      = link_to image_tag(("home.png"), height: "50px",  width: "50px"  ) ,"/staticpages/activity4"
+                 
                     
                   

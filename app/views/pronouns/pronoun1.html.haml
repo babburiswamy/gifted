@@ -1,26 +1,24 @@
-.well
-  %h2 Is, are:
-  %h4 We use is with singular nouns and pronouns.
-  
-  %h4 eg:The chair is old.
-  %h4  The train is late.
-  %h4  He is a postman.
-  
-  %h4 We use are with plural nouns and pronouns.
-  %h4 eg:  These chairs are old.
-  %h4   All the trains are late.
-  %h4  They are students of this school.
-  %b However, there are two important points to remember.
-  %h4 I is also a singular pronoun. With  I  we use am.
-  %h4 I am your friend. I am very hungry.
-  %h4  With you, we always use are, whether you stands for one person or
-  %h4  for more than one person: You are a student. ( You for one student)
-  %h4  You are students. 
-.row
-  %br
-  %ul.pager
-    %li
-      = link_to "previous",  pronouns_pronoun_path
-    %li
-      = link_to "next",  pronouns_pronoun2_path
-
+#well10
+  .row
+    .col-sm-8
+      %h2 Is, are:
+      %h4 We use 'is' with singular nouns and pronouns.
+      %h5 &nbsp &nbsp eg:The chair is old.
+      %h5 &nbsp &nbsp The train is late.
+      %h5 &nbsp &nbsp  He is a postman.
+      %h4 We use 'are' with plural nouns and pronouns.
+      %h5  &nbsp &nbsp eg:  These chairs are old.
+      %h5   &nbsp &nbsp All the trains are late.
+      %h5  &nbsp &nbsp They are students of this school.
+      %b However, there are two important points to remember.
+      %h4 I is also a singular pronoun. With  I  we use am.
+      %h4 I am your friend. I am very hungry.
+      %h4  With you, we always use are, whether you stands for one person or
+      %h4  for more than one person: You are a student. ( You for one student)
+      %h4  You are students. 
+    .col-sm-4
+      = link_to image_tag(("back.png"), height: "50px",  width: "50px"  ) ,"/pronouns/pronoun"
+      = link_to image_tag(("next.png"), height: "50px",  width: "50px"  ) ,"/pronouns/pronoun2"
+      = link_to image_tag(("home.png"), height: "50px",  width: "50px"  ) ,"/staticpages/activity4"
+          
+     

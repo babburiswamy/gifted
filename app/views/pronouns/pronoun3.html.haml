@@ -1,21 +1,19 @@
-.row
-  .well
-    %h2 Has, Have:
-    %h4 We use "has" with singular nouns and pronouns:
-    %h4 eg:A triangle has three sides.
-    %h4 He has a new motorcycle.
-    %h4 We use "have" with plural nouns and pronouns:
-    %h4 All the rooms have windows in them.
-    %h4 We have a good library.
-    %h4 With I and you,we always use have:
-    %h4 eg:I have a bright idea.
-    %h4 You have a new bat. ( You for one boy)
-    %h4 You have new bats. ( you for more than one boy)
-.row
-  %br
-  %ul.pager
-    %li
-      = link_to "previous",  pronouns_pronoun2_path
-    %li
-      = link_to "next",  staticpages_adjectives_path
-                                                    
+#well10
+  .row
+    .col-sm-8
+      %h2 Has, Have:
+      %h4 We use 'has' with singular nouns and pronouns:
+      %h5 &nbsp &nbsp eg:A triangle has three sides.
+      %h5 &nbsp &nbsp &nbsp He has a new motorcycle.
+      %h4 We use 'have' with plural nouns and pronouns:
+      %h5 &nbsp &nbsp eg: All the rooms have windows in them.
+      %h5 &nbsp &nbsp &nbsp &nbsp  We have a good library.
+      %h4 With 'I' and 'you',we always use 'have':
+      %h5 &nbsp &nbsp eg:I have a bright idea.
+      %h5 &nbsp &nbsp &nbsp You have a new bat. ( You for one boy)
+      %h5 &nbsp &nbsp &nbsp You have new bats. ( you for more than one boy)
+    .col-sm-4
+      = link_to image_tag(("back.png"), height: "50px",  width: "50px"  ) ,"/pronouns/pronoun2"
+      = link_to image_tag(("next.png"), height: "50px",  width: "50px"  ) ,"/staticpages/adjectives"
+      = link_to image_tag(("home.png"), height: "50px",  width: "50px"  ) ,"/staticpages/activity4"
+            

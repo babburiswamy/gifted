@@ -1,41 +1,40 @@
-.well
-  %h4 Nouns that end in ‘s’ , ‘sh’ , ‘ch’ , ‘o’ , and ‘x’ form their plural by adding ‘es’ to them.
-%h4 eg:   
-.form-group{ :ng_controller => "Activity6Controller"}
+#well10
   .row
-    .col-sm-1
-      = label_tag "Box:", nil, :class => "form-control"
-    .col-sm-1
-      = label_tag "Boxes", nil, :class => "form-control"
-    .col-sm-1
-      = label_tag "Bench:", nil, :class => "form-control"
-    .col-sm-1
-      = text_field "bench",nil, :class => "form-control" ,"ng-model" => "bench"
+    .col-sm-8
+      %h4 Nouns that end in ‘s’ , ‘sh’ , ‘ch’ , ‘o’ , and ‘x’ form their plural by adding ‘es’ to them.
+      %h4 eg:   
+      .form-group{ :ng_controller => "Activity6Controller"}
+        .row
+          .col-sm-2
+            = label_tag "Box:", nil, :class => "form-control"
+          .col-sm-2
+            = label_tag "Boxes", nil, :class => "form-control"
+          .col-sm-2
+            = label_tag "Bench:", nil, :class => "form-control"
+          .col-sm-2
+            = text_field "bench",nil, :class => "form-control" ,"ng-model" => "bench"
      
-  .row
-    .col-sm-1
-      = label_tag "bus:", nil, :class => "form-control"
-    .col-sm-1
-      = text_field "bus",nil, :class => "form-control" ,"ng-model" => "bus"
-    .col-sm-1
-      = label_tag "hero:", nil, :class => "form-control"
-    .col-sm-1
-      = text_field "hero",nil, :class => "form-control" ,"ng-model" => "hero"
-  .row
-    .col-sm-1
-      = label_tag "bush:", nil, :class => "form-control"
-    .col-sm-1
-      = text_field "bush",nil, :class => "form-control" ,"ng-model" => "bush"
-      %br
-      = link_to "submit", "#", :ng_click => "validate()", :class => "btn btn-warning"  
-  .row
-    %br
-    %ul.pager
-      %li
-        = link_to "previous",  staticpages_activity5_path
-      %li
-        = link_to "next",  nouns_common_noun_path
-
+        .row
+          .col-sm-2
+            = label_tag "bus:", nil, :class => "form-control"
+          .col-sm-2
+            = text_field "bus",nil, :class => "form-control" ,"ng-model" => "bus"
+          .col-sm-2
+            = label_tag "hero:", nil, :class => "form-control"
+          .col-sm-2
+            = text_field "hero",nil, :class => "form-control" ,"ng-model" => "hero"
+        .row
+          .col-sm-2
+            = label_tag "bush:", nil, :class => "form-control"
+          .col-sm-2
+            = text_field "bush",nil, :class => "form-control" ,"ng-model" => "bush"
+            %br
+            = link_to "submit", "#", :ng_click => "validate()", :class => "btn btn-warning"  
+    .col-sm-4
+      = link_to image_tag(("back.png"), height: "50px",  width: "50px"  ) ,"/staticpages/activity5"
+      = link_to image_tag(("next.png"), height: "50px",  width: "50px"  ) ,"/nouns/common_noun"
+      = link_to image_tag(("home.png"), height: "50px",  width: "50px"  ) ,"/staticpages/activity4"
+     
           
 
           

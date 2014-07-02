@@ -1,18 +1,21 @@
-%html
-  %body
-    %form
-      .col-sm-4
-        = image_tag("activity9.jpg", :alt => "rss feed", :class => "img-rounded" , :style => "height:360px;width:350px")
-      .col-sm-4
-        %p{:style => "font-family:arial;color:green;font-size:20px;text-decoration:underline;"} Step8:
-        %h4
-          Fold the triangles over and upwards again. Now you're ready to glue.
-          .row
-            %br
-            %ul.pager
-              %li
-                = link_to "previous",  staticpages_activity8_path
-              %li
-                = link_to "next",  staticpages_activity10_path
-
+#well10 
+  .row
+    .col-sm-8
+      %h3 Some nouns remain the same in Singular & Plural:
+      %h5 &nbsp rice &nbsp hair &nbsp news &nbsp sugar &nbsp grass	 
+      %h5 &nbsp fish &nbsp  sheep &nbsp gold &nbsp series 
+      %br
+      %h3 Some nouns are always plural.
+      %h5 &nbsp trousers &nbsp shorts &nbsp jeans &nbsp pants &nbsp pyjamas	 
+      %h5 &nbsp spectacles &nbsp  glasses &nbsp scissors &nbsp tongs
+      %br
+      %h3 Some nouns are usually plural.
+      %h5 &nbsp shoes  &nbsp sandals  &nbsp  boots   &nbsp  chopsticks	 
+      %h5 &nbsp gloves  &nbsp clogs &nbsp  stocks
+    .col-sm-4
+      = link_to image_tag(("back.png"), height: "50px",  width: "50px"  ) ,"/staticpages/activity3"
+      = link_to image_tag(("next.png"), height: "50px",  width: "50px"  ) ,"/staticpages/activity10"
+      = link_to image_tag(("home.png"), height: "50px",  width: "50px"  ) ,"/staticpages/activity4"
+     
+            
           

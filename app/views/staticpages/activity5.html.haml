@@ -1,40 +1,39 @@
-.well
-  %h4 You usually make nouns plural by adding ‘ s ‘ at the end.
-  %h4 Exercise on singular and plural
-%h4 eg:   
-.form-group{ :ng_controller => "Activity5Controller"}
+#well10
   .row
-    .col-sm-1
-      = label_tag "Book:", nil, :class => "form-control"
-    .col-sm-1
-      = label_tag "Books", nil, :class => "form-control"
-    .col-sm-1
-      = label_tag "shop:", nil, :class => "form-control"
-    .col-sm-1
-      = text_field "shop",nil, :class => "form-control" ,"ng-model" => "shop"
+    .col-sm-8
+      %h4 You usually make nouns plural by adding ‘ s ‘ at the end.
+      %h4 Exercise on singular and plural
+      %h4 eg:   
+      .form-group{ :ng_controller => "Activity5Controller"}
+        .row
+          .col-sm-2
+            = label_tag "Book:", nil, :class => "form-control"
+          .col-sm-2
+            = label_tag "Books", nil, :class => "form-control"
+          .col-sm-2
+            = label_tag "shop:", nil, :class => "form-control"
+          .col-sm-2
+            = text_field "shop",nil, :class => "form-control" ,"ng-model" => "shop"
+        .row
+          .col-sm-2
+            = label_tag "table:", nil, :class => "form-control"
+          .col-sm-2
+            = text_field "table",nil, :class => "form-control" ,"ng-model" => "table"
+          .col-sm-2
+            = label_tag "pillow:", nil, :class => "form-control"
+          .col-sm-2
+            = text_field "pillow",nil, :class => "form-control" ,"ng-model" => "pillow"
+        .row
+          .col-sm-2
+            = label_tag "tree:", nil, :class => "form-control"
+          .col-sm-2
+            = text_field "tree",nil, :class => "form-control" ,"ng-model" => "tree"
+            %br
+            = link_to "submit", "#", :ng_click => "validate()", :class => "btn btn-warning"  
+    .col-sm-4
+      = link_to image_tag(("back.png"), height: "50px",  width: "50px"  ) ,"/staticpages/activity10"
+      = link_to image_tag(("next.png"), height: "50px",  width: "50px"  ) ,"/staticpages/activity8"
+      = link_to image_tag(("home.png"), height: "50px",  width: "50px"  ) ,"/staticpages/activity4"
      
-  .row
-    .col-sm-1
-      = label_tag "table:", nil, :class => "form-control"
-    .col-sm-1
-      = text_field "table",nil, :class => "form-control" ,"ng-model" => "table"
-    .col-sm-1
-      = label_tag "pillow:", nil, :class => "form-control"
-    .col-sm-1
-      = text_field "pillow",nil, :class => "form-control" ,"ng-model" => "pillow"
-  .row
-    .col-sm-1
-      = label_tag "tree:", nil, :class => "form-control"
-    .col-sm-1
-      = text_field "tree",nil, :class => "form-control" ,"ng-model" => "tree"
-      %br
-      = link_to "submit", "#", :ng_click => "validate()", :class => "btn btn-warning"  
-  .row
-    %br
-    %ul.pager
-      %li
-        = link_to "previous",  staticpages_activity3_path
-      %li
-        = link_to "next",  staticpages_activity8_path
 
-          
+       

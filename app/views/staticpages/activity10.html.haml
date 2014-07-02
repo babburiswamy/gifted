@@ -1,18 +1,13 @@
-%html
-  %body
-    %form
-      .col-sm-4
-        = image_tag("activity10.jpg", :alt => "rss feed", :class => "img-rounded" , :style => "height:360px;width:350px")
-      .col-sm-4
-        %p{:style => "font-family:arial;color:green;font-size:20px;text-decoration:underline;"} Step9:
-        %h4
-          Using a glue stick, add glue to the flaps.
-          .row
-            %br
-            %ul.pager
-              %li
-                = link_to "previous",  staticpages_activity9_path
-              %li
-                = link_to "next",  staticpages_activity11_path
-
-          
+#well10
+  .row
+    .col-sm-8
+      %h3 Some rules to remember when changing singular sentence into plural sentence.
+      %h4 &nbsp&nbsp i - we, &nbsp He/She - they ,&nbsp a - many / several
+      %h4 &nbsp&nbsp This-These, &nbsp his/her-their, &nbsp me-us / our
+      %h4 &nbsp&nbsp That-Those, &nbsp him/her-them,  &nbsp is-are
+      %h4 &nbsp&nbsp Was-were, &nbsp myself-ourselves
+    .col-sm-4
+      = link_to image_tag(("back.png"), height: "50px",  width: "50px"  ) ,"/staticpages/activity9"
+      = link_to image_tag(("next.png"), height: "50px",  width: "50px"  ) ,"/staticpages/activity5"
+      = link_to image_tag(("home.png"), height: "50px",  width: "50px"  ) ,"/staticpages/activity4"
+     
