@@ -267,8 +267,9 @@ body {
 
 
 h1.italic{
-    color : #F21760;
+    color : #000000;
     font-style: oblique;
+    font-family: 'KulminoituvaRegular', helvetica, sans-serif;
     font-size:50px;
     text-shadow: 3px 3px 3px #ffffff;
 }

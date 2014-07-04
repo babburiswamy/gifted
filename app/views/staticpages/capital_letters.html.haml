@@ -1,10 +1,57 @@
 #well10
   .row
-    .col-sm-8
+    .col-sm-4
       %h2 Capital Letters:
       %h4 All  names  begin with capital letters.
       %h4 Read the names of the children in alphabetical order.
-      = image_tag("capital.jpg", :alt => "rss feed", :class => "img-rounded" , :style => "height:400px;width:400px")
+      = image_tag("capital.jpg", :alt => "rss feed", :class => "img-rounded" , :style => "height:380px;width:400px")
+    .col-sm-4
+      .form-group{ :ng_controller => "CapitalController"}
+        %br
+        %br
+        %br
+        %br
+        .row
+          .col-sm-2
+          .col-sm-6
+            = text_field "Akul" ,nil, :class => "form-control" ,"ng-model" => "Akul"
+            %br
+        .row
+          .col-sm-2
+          .col-sm-6
+            = text_field "Dhruv" ,nil, :class => "form-control" ,"ng-model" => "Dhruv"
+            %br
+        .row
+          .col-sm-2
+          .col-sm-6
+            = text_field "Mohan" ,nil, :class => "form-control" ,"ng-model" => "Mohan"
+            %br
+        .row
+          .col-sm-2
+          .col-sm-6
+            = text_field "Neema" ,nil, :class => "form-control" ,"ng-model" => "Neema"
+            %br
+        .row
+          .col-sm-2
+          .col-sm-6
+            = text_field "Parul" ,nil, :class => "form-control" ,"ng-model" => "Parul"
+            %br
+        .row
+          .col-sm-2
+          .col-sm-6
+            = text_field "Raman" ,nil, :class => "form-control" ,"ng-model" => "Raman"
+            %br
+        .row
+          .col-sm-2
+          .col-sm-6
+            = text_field "Sonia" ,nil, :class => "form-control" ,"ng-model" => "Sonia"
+            %br
+        .row
+          .col-sm-2
+          .col-sm-6
+            = text_field "Vami" ,nil, :class => "form-control" ,"ng-model" => "Vami"
+          .col-sm-2
+            = link_to "submit", "#", :ng_click => "validate()", :class => "btn btn-warning"   
     .col-sm-4
       = link_to image_tag(("back.png"), height: "50px",  width: "50px"  ) ,"/staticpages/activity16"
       = link_to image_tag(("next.png"), height: "50px",  width: "50px"  ) ,"/staticpages/activity3"

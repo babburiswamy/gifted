@@ -5,11 +5,12 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body{"ng-app" => "myApp"}
-    = render 'layouts/head'
+    %h1.italic I AM GIFTED
+    = render 'layouts/menu'  
     %p.notice= notice
     %p.alert= alert
     = yield
-    = render 'layouts/rotate'  
+   
     = render 'layouts/footer'
     
      
